@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: FABRIKBOLD;
+    src: url(./assets/css/images/fonts/FABRIK-BOLD_0.OTF) format("opentype");
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+    font-family: FABRIK;
+    src: url(./assets/css/images/fonts/FABRIK-REGULAR_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: TIEMPO;
+    src: url(./assets/css/images/fonts/TIEMPOSHEADLINE-BLACK.OTF) format("opentype");
+}

@@ -1,0 +1,58 @@
+$color-primary: #280071;
+$color-secondary: #FB4030;
+$color-terceary: #DCEBEC;
+$font-color: #097baf;
+$title-color: #097baf;
+$theme-colors: (
+  'blue': $color-primary,
+  'orange': $color-secondary,
+  'white': $font-color,
+  'grey': $title-color
+);
+$mm:320px;
+$ml:375px;
+$t:425px;
+$t2:597px;
+$ds:769px;
+$ds2:896px;
+$dm:1024px;
+$dm2:1232px;
+$r:1440px;
+$r2:2000px;
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   ms: 320px,
+//   mm: 375px,
+//   ml: 425px,
+//   t: 768px,
+//   dm: 1024px,
+//   dl: 1440px,
+//   r: 1920px
+// );
+
+$container-max-widths: (
+  mm:375px,
+  ml:425px,
+  ds:768px,
+  ds2:896px,
+  dm:1024px,
+  dm2:1232px,
+  r:1440px,
+  r2:2000px
+);
+
+@font-face {
+  font-family: FABRIKBOLD;
+  src: url(/fonts/FABRIK-BOLD_0.OTF) format("opentype");
+}
+
+@font-face {
+  font-family: FABRIK;
+  src: url(/fonts/FABRIK-REGULAR_0.OTF) format("opentype");
+}
+
+@font-face {
+  font-family: TIEMPO;
+  src: url(/fonts/TIEMPOSHEADLINE-BLACK.OTF) format("opentype");
+}

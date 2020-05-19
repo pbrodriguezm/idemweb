@@ -10,10 +10,109 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta data-n-head="true" http-equiv="x-ua-compatible" content="ie=edge">
+    <meta data-n-head="true" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+    <meta data-n-head="true" data-hid="description" name="description" content="Idem Landing Page">
+    <link data-n-head="true" rel="icon" type="image/png" href="/favicon.png">
+    <link data-n-head="true" rel="stylesheet" href='https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway:400,900" rel="stylesheet'>
+
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
 </head>
 
 <body class="mat-typography">
     <app-root></app-root>
+
+
+
+    <script>
+        import {
+            Carousel3d,
+            Slide
+        } from 'vue-carousel-3d';
+        export default {
+            data: function() {
+                return {
+                    slides: 7
+                }
+            },
+            components: {
+                Carousel3d,
+                Slide
+            }
+            // components: {
+            //   'carousel-3d': Carousel3d.Carousel3d,
+            //   'slide': Carousel3d.Slide
+            // }
+        }
+    </script>
+
+    <script>
+        import {
+            mapGetters,
+            mapState,
+            mapActions,
+            mapMutations
+        } from 'vuex'
+
+        export default {
+            computed: mapGetters({
+                slides: 'contenido/main/getHeroMainSlides',
+            }),
+            methods: {}
+        }
+    </script>
+
+
+    <!-- NAVBAR-->
+
+    <script>
+        import {
+            responsiveMixin
+        } from '~/utils/responsive'
+        import Navegation from '~/components/Layout/NavbarComponents/Desktop/Navegation'
+        export default {
+            name: 'TheNavbar',
+            mixins: [responsiveMixin],
+            components: {
+                Navegation,
+            },
+            data: () => ({
+                scrollToElement: null,
+                collapseitsOpen: false,
+                isapear: true,
+                cpid: 'cursospresenciales',
+                appearWords: false,
+                NavegationOpen: false,
+            }),
+            props: {
+                mySidebarId: {
+                    type: String,
+                    default: '0'
+                },
+
+            },
+            mounted() {
+                window.addEventListener('load', () => {
+                    this.scrollToElement = require('scroll-to-element')
+                    document.documentElement.style.overflow = 'auto'
+                    this.collapseitsOpen = false;
+                })
+            },
+            methods: {
+                changeAW(value) {
+                    this.appearWords = value
+                }
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
+
 
 </html>

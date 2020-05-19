@@ -8,13 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { OnlineComponent } from './components/cursos/online/online.component';
 import { PresencialComponent } from './components/cursos/presencial/presencial.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CursosComponent,
     OnlineComponent,
-    PresencialComponent
+    PresencialComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
