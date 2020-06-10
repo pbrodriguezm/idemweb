@@ -1,1 +1,268 @@
-<p>presencial works!</p>
+<div id="container app" class="nuxt">
+    <div>
+
+
+
+        <div class="container-fluid cursos_presenciales_s_hero p-0" style="height: 100vh; width: 100%;">
+            <ngb-carousel id="carousel1" :interval="4000" v-model="slide" class="p-0 w-100 micarru" style="height: 100vh; text-shadow: 1px 1px 2px #333;" controls [showNavigationArrows]=false [showNavigationIndicators]=false>
+                <!-- Text slides with image -->
+                <ng-template ngbSlide style="height:100vh;">
+
+                    <div style="height: 100vh;">
+                        <div class="col uno h-100 col-8 p-0" style="height: 100vh;">
+                            <div class="container screen1 h-100 d-flex justify-content-end">
+                                <div class="col col-6 h-100 px-3 px-lg-5">
+                                    <div class="formulario-general h-100 w-100 d-flex flex-column justify-content-center">
+                                        <p class="hero-title">{{curso.nombre}}</p>
+                                        <div class="form d-flex justify-content-end pr-5" style="z-index:800;max-width:394px;">
+                                            <div class="btn-wrapper px-2">
+                                                <button (click)="openRegistro()" class="btn btn-danger comprar-btn"> comprar ahora </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end pt-4 pr-5" style="z-index:800;max-width:394px;">
+                                            <div>
+
+                                                <label class=" form radio m-0" *ngFor="let precio of precios">
+                                                    <div class="d-flex">
+                                                        <p class="radio">{{precio.nombre}}</p>
+                                                    </div>
+     
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col dos h-100 col-4 p-0">
+                            <div class="screen2 h-100 b-100">
+                                <span class="LogoBlanco"></span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+            <!--hero-->
+        </div>
+
+
+        <!--Informacion-->
+        <div class="container-fluid informationDesktop p-0" style="height:100vh; width:100%;">
+            <div class=" row h-100 w-100 m-0">
+                <div class="column dos h-100 col-8 col-lg-7 p-0">
+                    <div class="screen2 h-100 b-100">
+                        <div class="contenido d-flex flex-column justify-content-center h-100 p-5">
+                            <div class="contenidos h-75 p-5 pl-0 pr-lg-5">
+                                <div class="title" style="">
+                                    <div style="height:50px;">
+                                        <div class="section-title">información</div>
+                                    </div>
+                                </div>
+                                <div class="normal-text" style="text-align: justify;">
+                                    {{curso.descripcion}}
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="white-container  d-flex flex-column justify-content-around px-3">
+                            <div class="container-blue py-2 px-4 d-flex flex-column justify-content-center">
+                                <div class="w-100 d-flex justify-content-center">
+                                    <div class="icon_1"></div>
+                                </div>
+                                <div class="contenido py-2">
+                                    <p class="normal-text m-0"> Aula Magna de la univesidad San augustin</p>
+                                </div>
+                            </div>
+                            <div class="container-blue py-4  px-4 d-flex flex-column justify-content-center">
+                                <div class="w-100  d-flex justify-content-center">
+                                    <div class="icon_2"></div>
+                                </div>
+                                <div class="contenido py-2">
+                                    <p class="normal-text m-0">28 set 6:00pm-9:30pm</p>
+                                    <p class="normal-text m-0"> 29 set 4:00pm-8:00pm</p>
+                                </div>
+                            </div>
+                            <div class="container-blue p-4 d-flex flex-column justify-content-center">
+                                <div class="w-100 d-flex justify-content-center">
+                                    <div class="icon_3"></div>
+                                </div>
+                                <div class="contenido py-2">
+                                    <p class="normal-text m-0"> Estudiante S/50.00</p>
+                                    <p class="normal-text m-0"> Profecional S/60.00</p>
+                                    <p class="normal-text m-0"> Corporativo S/200.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" column uno h-100 col-4 col-lg-5 p-0">
+                    <div class="container screen1 h-100 d-flex justify-content-start">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Program-->
+
+        <div class="container-fluid programa p-6 p-md-0" style="height: 100vh; width: 100%;">
+            <ngb-carousel class="carousel-caption" style="height: 100vh;" id="carousel1" :interval="4000" v-model="slide" class="p-0 m-0" style="text-shadow: 1px 1px 2px #333;" controls img-width="1024" img-height="480">
+                <!-- Text slides with image -->
+                <ng-template ngbSlide style="height: 100vh;">
+                    <div style="background-color: #270172; height: 100vh;" class="row h-100">
+                        <div class="column dos h-100 col-4 p-0" style="height: 100vh;">
+                            <div class="screen2" style="height: 100vh;">
+                                <div class="text d-flex flex-column justify-content-start">
+                                    <div class="hero-title">
+                                        Programa
+                                    </div>
+                                    <div class="normal-text">
+                                        {{curso.descripcion2}}
+                                    </div>
+                                </div>
+                                <div class="fecha">
+                                    <div class="number" style="text-align: center;">{{curso.fechahora_inicio | date: 'dd'}}</div>
+                                    <div class="month" style="text-align: center;">{{mesdeinicio()}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column uno h-100 col-8 p-0">
+                            <div class="container screen1 n1 h-100 d-flex justify-content-start">
+                                <!-- <div class="text col-9 px-5 py-5 ml-5" style="z-index:2;">
+               Convertirnos en el mejor instituto de educaciòn superior del Perú.
+              </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+
+        <!--TEACHERS-->
+        <div class="docentes container-fluid d-flex flex-column justify-content-center inf px-2 px-lg-5" style="height:100vh; width:100%;">
+            <div class="py-5">
+                <div class="text_container">
+                    <div class="title-text">
+                        <div class="hero-title">
+                            Docentes
+                        </div>
+                        <p class="normal-text m-0"> Lorem ipsum dolor sit amet, consectetur .</p>
+                        <p class="m-0 normal-text"> Lorem ipsum dolor sit amet, consectetur adipis</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+
+
+                <ngb-carousel id="carousel1" :interval="4000" controls>
+                    <ng-template ngbSlide *ngFor="let itemprofesor of profesores" style="height:50vh;;">
+                        <div class="w-100 h-100 px-0">
+                            <div class="px-0 w-100 h-100 m-0 px-4 d-flex justify-content-center">
+                                <div v-for="docent in pairs" class="d-flex w-50 px-2 py-4">
+                                    <div class="d-flex justify-content-start pt-0 text-center">
+                                        <div class="image w-100 pt-0 d-flex flex-column justify-content-center" [ngStyle]="{'background-image':'url('+itemprofesor.idem_personas.foto+')'}">
+                                            <span class="w-100 d-flex justify-content-start"></span>
+                                        </div>
+                                        <div class="card-text w-100 d-flex flex-column justify-content-center">
+                                            <div class="cursos-title text-left">{{itemprofesor.idem_personas.nombres}} {{itemprofesor.idem_personas.apellido_pa}}</div>
+                                            <p class="small-text subtitle text-left">{{itemprofesor.titulo_profesional}}</p>
+                                            <p class="small-text text-left">
+                                                {{itemprofesor.descripcion}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+        </div>
+
+
+        <!-- INSCRIPCIONES-->
+
+        <div class="container-fluid inscripcion p-0" style="height:100vh; width:100%;">
+            <div class=" row h-100 w-100 m-0">
+                <div class="column uno h-100 col-7 p-0">
+                    <div class="screen2 h-100 b-100">
+                        <div class="white-container d-flex flex-column justify-content-center py-3 px-4">
+                            <p class="hero-title d-flex px-3 pt-4">Inscripción</p>
+                            <div class="row px-3">
+                                <div class="column col-6 px-3">
+                                    <label class="field a-field a-field_a1 page__field w-100">
+                                        <input class="field__input a-field__input" placeholder="e.g. Stanislav" required>
+                                        <span class="a-field__label-wrap">
+                                            <span class=" a-field__label normal-text">Nombre</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="column col-6 px-3">
+                                    <label class="field a-field a-field_a1 page__field  w-100">
+                                        <input class="field__input a-field__input" placeholder="e.g. Stanislav" required>
+                                        <span class="a-field__label-wrap">
+                                            <span class="normal-text a-field__label">Apellido</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row px-3">
+                                <div class="column col-6 px-3">
+                                    <label class="field a-field a-field_a1 page__field w-100">
+                                        <input class="field__input a-field__input" placeholder="e.g. Stanislav" required>
+                                        <span class="a-field__label-wrap">
+                                            <span class="normal-text a-field__label">Celular</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="column col-6 px-3">
+                                    <label class="field a-field a-field_a1 page__field  w-100">
+                                        <input class="field__input a-field__input" placeholder="e.g. Stanislav" required>
+                                        <span class="a-field__label-wrap">
+                                            <span class="normal-text a-field__label">E-mail</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row px-3">
+
+                                <div class="column col-6 px-3">
+                                    <div class="select">
+                                        <select class="small-text" name="slct" id="slct">
+                                            <option selected disabled>Curso/Seminario de interés</option>
+                                            <option value="1">Pure CSS</option>
+                                            <option value="2">No JS</option>
+                                            <option value="3">Nice!</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column col-6 px-3">
+                                    <div class="card">
+                                        <label class="checkbox-label d-flex">
+                                            <input type="checkbox">
+                                            <span class="checkbox-custom rectangular"></span>
+                                        </label>
+                                        <div class="input-title">
+                                            <div class="small-text" style="    margin-left: 40px;
+                                            margin-top: 15px;">Términos y condiciones</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="btn-wrapper d-flex justify-content-center w-100 py-4">
+                                    <button class="btn btn-outline-danger agregar-btn py-0" style="min-width:100px;">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" column dos h-100 col-5 p-0">
+                    <div class="container screen1 h-100 d-flex justify-content-start">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>

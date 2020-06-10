@@ -1,0 +1,95 @@
+@font-face {
+    font-family: FABRIKBOLD;
+    src: url(../../../assets/css/images/fonts/FABRIK-BOLD_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: FABRIK;
+    src: url(../../../assets/css/images/fonts/FABRIK-REGULAR_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: TIEMPO;
+    src: url(../../../assets/css/images/fonts/TIEMPOSHEADLINE-BLACK.OTF) format("opentype");
+}
+
+.mat-dialog-container {
+    background-color: #280071;
+    font-family: 'Merriweather', serif;
+}
+
+.fonfoFormulario {
+    font-family: 'Merriweather', serif;
+    background-color: #280071;
+    color: white;
+}
+
+.continuar-btn,
+.omitir-btn {
+    font-family: 'Merriweather', serif;
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: FABRIK;
+    font-size: 14px;
+}
+
+.continuar-btn {
+    border-color: white;
+    background-color: white;
+    color: #280071;
+}
+
+.omitir-btn {
+    border-color: white;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+    .continuar-btn,
+    .omitir-btn {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .continuar-btn,
+    .omitir-btn {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .continuar-btn,
+    .omitir-btn {
+        font-size: 32px;
+    }
+}
+
+.task-header {
+    background-color: transparent;
+    padding: 0 5px;
+    height: 20px;
+}
+
+.fx-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-form-field {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Merriweather', serif;
+}
+
+.botonesLogin {
+    cursor: pointer;
+    color: #f8433c;
+    font-family: TIEMPO;
+}
+
+.titulosLogin {
+    color: white;
+    font-family: TIEMPO;
+}

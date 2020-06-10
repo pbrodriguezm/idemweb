@@ -1,0 +1,694 @@
+@font-face {
+    font-family: FABRIKBOLD;
+    src: url(../../../assets/css/images/fonts/FABRIK-BOLD_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: FABRIK;
+    src: url(../../../assets/css/images/fonts/FABRIK-REGULAR_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: TIEMPO;
+    src: url(../../../assets/css/images/fonts/TIEMPOSHEADLINE-BLACK.OTF) format("opentype");
+}
+
+.cursos_presenciales_s_hero {
+    /* The radio */
+    /* Hide the browser's default radio button */
+    /* Create a custom radio button */
+    /* When the radio button is checked, add a blue background */
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    /* Show the indicator (dot/circle) when checked */
+    /* Style the indicator (dot/circle) */
+    /* The check */
+    /* Hide the browser's default checkbox */
+    /* Create a custom checkbox */
+    /* When the checkbox is checked, add a blue background */
+    /* Create the checkmark/indicator (hidden when not checked) */
+    /* Show the checkmark when checked */
+    /* Style the checkmark/indicator */
+}
+
+.cursos_presenciales_s_hero .carousel-caption {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.cursos_presenciales_s_hero .screen1 {
+    z-index: -4;
+    font-size: 35px;
+    background-image: url("../../../assets/css/images/cursoSelect/Fotos-IDEM--14.png");
+    background-size: cover;
+    max-width: 10000px;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general {
+    position: absolute;
+    left: 80%;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .hero-title {
+    line-height: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .hero-title {
+        line-height: 45px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .hero-title {
+        line-height: 55px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .hero-title {
+        line-height: 65px;
+    }
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .text {
+    color: #280071;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 100;
+    -webkit-margin-left: 30%;
+    z-index: 35;
+    font-family: TIEMPO;
+    text-shadow: none;
+    text-decoration: underline #280071;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .text {
+        font-size: 38px;
+    }
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .radio {
+    text-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio,
+.cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-decimal {
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    color: #fb4030;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1232px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio,
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-decimal {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio,
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-decimal {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio,
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-decimal {
+        font-size: 22px;
+    }
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-price {
+    font-family: TIEMPO;
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #fb4030;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-price {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-price {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-price {
+        font-size: 55px;
+    }
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .comprar-btn,
+.cursos_presenciales_s_hero .screen1 .formulario-general .agregar-btn {
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: FABRIK;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .comprar-btn,
+    .cursos_presenciales_s_hero .screen1 .formulario-general .agregar-btn {
+        font-size: 15px;
+    }
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .comprar-btn {
+    background-color: #f94139;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .agregar-btn {
+    border-color: #f94139;
+    background-color: transparent;
+}
+
+.cursos_presenciales_s_hero .screen2 {
+    z-index: -4;
+    background-color: #dcebec;
+}
+
+.cursos_presenciales_s_hero .screen2 .LogoBlanco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../../assets/css/images/LogoBlanco.png");
+    height: 185px;
+    width: 169px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen2 .LogoBlanco {
+        height: 285px;
+        width: 269px;
+    }
+}
+
+.cursos_presenciales_s_hero .img-fluid {
+    z-index: -5;
+    height: 100%;
+}
+
+.cursos_presenciales_s_hero .carousel-control-prev,
+.cursos_presenciales_s_hero .carousel-control-next {
+    z-index: 15;
+    display: none;
+    top: 93%;
+    background-color: #280071;
+    max-height: 7%;
+    max-width: 5%;
+    opacity: 1;
+}
+
+.cursos_presenciales_s_hero .carousel-control-prev {
+    left: 58.5%;
+}
+
+.cursos_presenciales_s_hero .carousel-control-next {
+    right: 31.5%;
+}
+
+.cursos_presenciales_s_hero .radio {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cursos_presenciales_s_hero .radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cursos_presenciales_s_hero .checkround {
+    position: absolute;
+    top: 9.5px;
+    left: 8px;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border-color: #f94139;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 50%;
+}
+
+.cursos_presenciales_s_hero .radio input:checked~.checkround {
+    background-color: transparent;
+}
+
+.cursos_presenciales_s_hero .checkround:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.cursos_presenciales_s_hero .radio input:checked~.checkround:after {
+    display: block;
+}
+
+.cursos_presenciales_s_hero .radio .checkround:after {
+    left: calc(50% - 3px);
+    top: calc(50% - 3px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f94139;
+}
+
+.cursos_presenciales_s_hero .check input:checked~.checkmark {
+    background-color: transparent;
+}
+
+.cursos_presenciales_s_hero .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.cursos_presenciales_s_hero .check input:checked~.checkmark:after {
+    display: block;
+}
+
+.informacion_cursos .screen1 {
+    background-color: #dcebec;
+}
+
+.informacion_cursos .screen1 .titulo_informacion {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    color: #fb4030;
+}
+
+.informacion_cursos .screen1 .contenido_reloj .clock-wrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .informacion_cursos .screen1 .contenido_reloj .clock-wrapper {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .informacion_cursos .screen1 .contenido_reloj .clock-wrapper {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .informacion_cursos .screen1 .contenido_reloj .clock-wrapper {
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .informacion_cursos .screen1 .contenido_reloj .clock-wrapper {
+        padding: 30px;
+    }
+}
+
+.informacion_cursos .screen1 .contenido_reloj .clock-wrapper .clock-icon {
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .informacion_cursos .screen1 .contenido_reloj .clock-wrapper .clock-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .informacion_cursos .screen1 .contenido_reloj .clock-wrapper .clock-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .informacion_cursos .screen1 .contenido_reloj .clock-wrapper .clock-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .informacion_cursos .screen1 .contenido_reloj .clock-wrapper .clock-icon {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.informacion_cursos .screen2 {
+    background-color: #280071;
+}
+
+.informacion_cursos .screen2 .texto_descripcion_curso {
+    color: #dcebec;
+}
+
+.informacion_cursos .screen2 .title-container {
+    color: red;
+    z-index: 2;
+    width: 50px;
+    height: 50%;
+    border: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .informacion_cursos .screen2 .title-container {
+        width: 100px;
+    }
+}
+
+.informacion_cursos .screen2 .titulo_informacion {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    color: #fb4030;
+}
+
+
+/*Estilos cuadro morado*/
+
+.silabo-morado {
+    background-color: #dcebec;
+}
+
+.silabo-morado .principal {
+    position: relative;
+    padding-left: 50px;
+    border: none;
+}
+
+.silabo-morado .principal .title-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50px;
+    height: 100%;
+}
+
+.silabo-morado .principal .title-container .section-title {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    color: #fb4030;
+}
+
+.silabo-morado .principal .cuadrado_azul {
+    background-color: #280071;
+    border: solid 1px #deeced;
+}
+
+.silabo-morado .principal .cuadrado_azul .module-number {
+    font-family: TIEMPO;
+    color: #dcebec;
+}
+
+.silabo-morado .principal .cuadrado_azul .flecha {
+    cursor: pointer;
+    background-image: url("../../../assets/css/images/cursoSelect/flechaRoja.png");
+    background-size: cover;
+    height: 15px;
+    width: 25px;
+}
+
+.silabo-morado .principal .cuadrado_rojo {
+    background-color: #fb4030;
+    border: solid 1px #deeced;
+    display: flex;
+    flex-direction: column;
+}
+
+.silabo-morado .principal .cuadrado_rojo .small-text {
+    color: #dcebec;
+}
+
+.silabo-morado .principal .cuadrado_rojo .module-number {
+    font-family: TIEMPO;
+    color: #280071;
+}
+
+.silabo-morado .principal .cuadrado_rojo .flecha {
+    cursor: pointer;
+    background-image: url("../../../assets/css/images/cursoSelect/flechaMorada.png");
+    background-size: cover;
+    height: 15px;
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.card {
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 896px) {
+    .card {
+        padding: 15px;
+    }
+}
+
+.card .normal-text {
+    color: #dcebec;
+}
+
+.card__face--back {
+    transform: rotateY(360deg);
+}
+
+
+/*docentes*/
+
+.docentes {
+    font-family: 'Merriweather', serif;
+    text-shadow: none;
+}
+
+.docentes .carousel {
+    margin-right: 5%;
+    margin-left: 5%;
+    max-width: 1200px;
+}
+
+@media screen and (min-width: 1440px) {
+    .docentes .carousel {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1600px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .docentes .carousel {
+        max-width: 1800px;
+    }
+}
+
+.docentes .carousel .carousel-caption {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    text-shadow: none;
+}
+
+.docentes .title-text .text {
+    color: #280071;
+    font-family: FABRIK;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.docentes .title-text .title {
+    color: #f9423a;
+    font-family: TIEMPO;
+}
+
+.docentes .text_container {
+    max-width: 400px;
+    margin-left: 10%;
+}
+
+@media screen and (min-width: 1440px) {
+    .docentes .text_container {
+        max-width: 600px;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .docentes .text_container {
+        max-width: 800px;
+    }
+}
+
+.docentes .hero-title {
+    color: #fb4030;
+    text-decoration: none;
+}
+
+.docentes .img-fluid {
+    height: 100%;
+    visibility: hidden;
+    border-color: transparent;
+}
+
+.docentes .image {
+    background-size: cover;
+    background-position: center;
+}
+
+.docentes .cursos-title {
+    color: #fb4030;
+    font-size: 13px;
+    padding-right: 15%;
+    line-height: 15px;
+    text-shadow: none;
+    font-family: TIEMPO;
+}
+
+@media screen and (min-width: 1024px) {
+    .docentes .cursos-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .docentes .cursos-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .docentes .cursos-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+.docentes .cursos-title-2 {
+    color: #fb4030;
+    font-size: 15px;
+    line-height: 19px;
+    text-shadow: none;
+}
+
+.docentes .card-text {
+    background-color: #dcebec;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .docentes .card-text {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .docentes .card-text {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .docentes .card-text {
+        padding: 50px;
+    }
+}
+
+.docentes .cursos-text {
+    color: #43398a;
+    font-size: 10px;
+    line-height: 12px;
+    text-shadow: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .docentes .cursos-text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+.docentes .subtitle {
+    color: #fb4030;
+}
+
+.docentes .carousel-caption {
+    height: 100%;
+    text-shadow: none;
+}
+
+.docentes .cursos-button {
+    background-color: #dcecec;
+    color: #43398a;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-shadow: none;
+}
+
+.docentes .carousel-control-prev,
+.docentes .carousel-control-next {
+    z-index: 15;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    background-size: cover;
+}
+
+.docentes .carousel-control-prev .carousel-control-prev-icon,
+.docentes .carousel-control-next .carousel-control-prev-icon {
+    display: none;
+}
+
+.docentes .carousel-control-prev .carousel-control-next-icon,
+.docentes .carousel-control-next .carousel-control-next-icon {
+    display: none;
+}
+
+.docentes .carousel-control-prev {
+    background-image: url(../../../assets/css/images/r2.png);
+}
+
+.docentes .carousel-control-next {
+    background-image: url(../../../assets/css/images/r1.png);
+}

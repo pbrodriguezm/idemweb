@@ -1,0 +1,1450 @@
+@font-face {
+    font-family: FABRIKBOLD;
+    src: url(../../../../assets/css/images/fonts/FABRIK-BOLD_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: FABRIK;
+    src: url(../../../../assets/css/images/fonts/FABRIK-REGULAR_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: TIEMPO;
+    src: url(../../../../assets/css/images/fonts/TIEMPOSHEADLINE-BLACK.OTF) format("opentype");
+}
+
+.cursos_presenciales_s_hero {
+    /* The radio */
+    /* Hide the browser's default radio button */
+    /* Create a custom radio button */
+    /* When the radio button is checked, add a blue background */
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    /* Show the indicator (dot/circle) when checked */
+    /* Style the indicator (dot/circle) */
+    /* The check */
+    /* Hide the browser's default checkbox */
+    /* Create a custom checkbox */
+    /* When the checkbox is checked, add a blue background */
+    /* Create the checkmark/indicator (hidden when not checked) */
+    /* Show the checkmark when checked */
+    /* Style the checkmark/indicator */
+}
+
+.cursos_presenciales_s_hero .carousel-caption {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.micarru .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: red;
+    height: 100vh;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block;
+    background-color: red;
+    height: 100vh;
+}
+
+.cursos_presenciales_s_hero .screen1 {
+    z-index: -4;
+    font-size: 35px;
+    background-image: url("../../../../assets/css/images/Cursos_presenciales_selectos/Fotos-IDEM--08.png");
+    background-size: cover;
+    max-width: 10000px;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general {
+    position: absolute;
+    left: 80%;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .hero-title {
+    line-height: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .hero-title {
+        line-height: 45px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .hero-title {
+        line-height: 55px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .hero-title {
+        line-height: 65px;
+    }
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .text {
+    color: #280071;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 100;
+    -webkit-margin-left: 30%;
+    z-index: 35;
+    font-family: TIEMPO;
+    text-shadow: none;
+    text-decoration: underline #280071;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .text {
+        font-size: 38px;
+    }
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .radio {
+    font-size: 10px;
+    font-family: FABRIK;
+    text-decoration: underline transaprent;
+    text-shadow: none;
+    color: #f94139;
+    text-decoration: none;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio,
+.cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-decimal {
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    color: #fb4030;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .radio .radio-price {
+    margin-top: 5px;
+    margin-left: 2px;
+    font-family: TIEMPO;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #fb4030;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .comprar-btn,
+.cursos_presenciales_s_hero .screen1 .formulario-general .agregar-btn {
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: FABRIK;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen1 .formulario-general .comprar-btn,
+    .cursos_presenciales_s_hero .screen1 .formulario-general .agregar-btn {
+        font-size: 15px;
+    }
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .comprar-btn {
+    background-color: #f94139;
+}
+
+.cursos_presenciales_s_hero .screen1 .formulario-general .agregar-btn {
+    border-color: #f94139;
+    background-color: transparent;
+}
+
+.cursos_presenciales_s_hero .screen2 {
+    z-index: -4;
+    background-color: #dcebec;
+}
+
+.cursos_presenciales_s_hero .screen2 .LogoBlanco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../../../assets/css/images/LogoBlanco.png");
+    height: 185px;
+    width: 169px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursos_presenciales_s_hero .screen2 .LogoBlanco {
+        height: 285px;
+        width: 269px;
+    }
+}
+
+.cursos_presenciales_s_hero .img-fluid {
+    z-index: -5;
+    height: 100%;
+}
+
+.cursos_presenciales_s_hero .carousel-control-prev,
+.cursos_presenciales_s_hero .carousel-control-next {
+    z-index: 15;
+    display: none;
+    top: 93%;
+    background-color: #280071;
+    max-height: 7%;
+    max-width: 5%;
+    opacity: 1;
+}
+
+.cursos_presenciales_s_hero .carousel-control-prev {
+    left: 58.5%;
+}
+
+.cursos_presenciales_s_hero .carousel-control-next {
+    right: 31.5%;
+}
+
+.cursos_presenciales_s_hero .radio {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cursos_presenciales_s_hero .radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cursos_presenciales_s_hero .checkround {
+    position: absolute;
+    top: 9.5px;
+    left: 8px;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border-color: #f94139;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 50%;
+}
+
+.cursos_presenciales_s_hero .radio input:checked~.checkround {
+    background-color: transparent;
+}
+
+.cursos_presenciales_s_hero .checkround:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.cursos_presenciales_s_hero .radio input:checked~.checkround:after {
+    display: block;
+}
+
+.cursos_presenciales_s_hero .radio .checkround:after {
+    left: calc(50% - 3px);
+    top: calc(50% - 3px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f94139;
+}
+
+.cursos_presenciales_s_hero .check input:checked~.checkmark {
+    background-color: transparent;
+}
+
+.cursos_presenciales_s_hero .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.cursos_presenciales_s_hero .check input:checked~.checkmark:after {
+    display: block;
+}
+
+.informationDesktop .screen1 {
+    z-index: -4;
+    background-image: url("../../../../assets/css/images/Cursos_presenciales_selectos/Fotos-IDEM--01.png");
+    background-size: cover;
+    max-width: 5000px;
+}
+
+.informationDesktop .screen2 {
+    z-index: -4;
+    background-color: #dcebec;
+}
+
+.informationDesktop .screen2 .contenido .title {
+    -webkit-transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 80px;
+    position: absolute;
+    left: -10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .informationDesktop .screen2 .contenido .title {
+        left: 0px;
+    }
+}
+
+.informationDesktop .screen2 .contenido .title .section-title {
+    color: #fb4030;
+}
+
+.informationDesktop .screen2 .contenido .contenidos {
+    width: 75%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informationDesktop .screen2 .white-container {
+    position: absolute;
+    min-width: 300px;
+    top: 15%;
+    left: calc(100% - 110px);
+    height: 70%;
+    font-size: 25px;
+    text-align: center;
+    z-index: 3;
+}
+
+.informationDesktop .screen2 .white-container .container-blue {
+    height: 28%;
+    max-width: 180px;
+    background-color: #280071;
+    color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    .informationDesktop .screen2 .white-container .container-blue {
+        min-width: 220px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .informationDesktop .screen2 .white-container .container-blue {
+        min-width: 220px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .informationDesktop .screen2 .white-container .container-blue {
+        min-width: 320px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .informationDesktop .screen2 .white-container .container-blue {
+        min-width: 420px;
+    }
+}
+
+.informationDesktop .screen2 .white-container .container-blue .normal-text {
+    color: #dcebec;
+    text-align: center;
+}
+
+.informationDesktop .screen2 .white-container .container-blue .icon_1 {
+    max-height: 30px;
+    max-width: 20px;
+    background-image: url("../../../../assets/css/images/Cursos_presenciales_selectos/icon_1.png");
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_1 {
+        height: 40px;
+        width: 25px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_1 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_1 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_1 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+.informationDesktop .screen2 .white-container .container-blue .icon_2 {
+    max-height: 32px;
+    max-width: 41px;
+    background-image: url("../../../../assets/css/images/Cursos_presenciales_selectos/icon_2.png");
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_2 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_2 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_2 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_2 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+.informationDesktop .screen2 .white-container .container-blue .icon_3 {
+    max-height: 30px;
+    max-width: 24px;
+    background-image: url("../../../../assets/css/images/Cursos_presenciales_selectos/icon_3.png");
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_3 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_3 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_3 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .informationDesktop .screen2 .white-container .container-blue .icon_3 {
+        height: 35px;
+        width: 30px;
+    }
+}
+
+.programa .carousel-caption {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    text-shadow: none;
+}
+
+.programa .screen1 {
+    z-index: -4;
+    background-size: cover;
+    max-width: 5000px;
+    font-size: 30px;
+}
+
+.programa .screen1 .text {
+    opacity: 1;
+    color: #f8433c;
+    text-align: left;
+    font-size: 45px;
+    font-weight: 100;
+    z-index: 3;
+    font-family: TIEMPO;
+    text-shadow: none;
+    text-decoration: underline #f8433c;
+}
+
+.carousel-item.active {
+    height: 100vh;
+}
+
+.programa .n1 {
+    background-color: #270172;
+    background-size: cover;
+}
+
+.programa .n2 {
+    background-color: #270172;
+    background-size: cover;
+}
+
+.programa .screen-filter {
+    background-color: rgba(127, 205, 199, 0.7);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.programa .dos {
+    background-color: #dcebec;
+}
+
+.programa .dos .screen2 {
+    z-index: -4;
+}
+
+@media screen and (min-width: 1232px) {
+    .programa .dos .screen2 {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .programa .dos .screen2 {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .programa .dos .screen2 {
+        padding: 50px;
+    }
+}
+
+.programa .dos .screen2 .text {
+    color: #270172;
+    padding: 50px;
+}
+
+.programa .dos .screen2 .text .hero-title {
+    text-decoration: none;
+}
+
+.programa .dos .screen2 .fecha {
+    color: #f8433c;
+    margin-top: 150px;
+    margin-left: 65px;
+}
+
+.programa .dos .screen2 .fecha .number {
+    font-family: FABRIKBOLD;
+    font-size: 100px;
+    margin: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+    .programa .dos .screen2 .fecha .number {
+        font-size: 160px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .programa .dos .screen2 .fecha .number {
+        font-size: 160px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .programa .dos .screen2 .fecha .number {
+        font-size: 200px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .programa .dos .screen2 .fecha .number {
+        font-size: 260px;
+    }
+}
+
+.programa .dos .screen2 .fecha .month {
+    font-family: FABRIKBOLD;
+    font-size: 20px;
+    margin-top: -35px;
+}
+
+@media screen and (min-width: 1024px) {
+    .programa .dos .screen2 .fecha .month {
+        font-size: 35px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .programa .dos .screen2 .fecha .month {
+        font-size: 35px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .programa .dos .screen2 .fecha .month {
+        font-size: 45px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .programa .dos .screen2 .fecha .month {
+        font-size: 60px;
+        margin-top: 70px;
+    }
+}
+
+.programa .carousel-control-prev,
+.programa .carousel-control-next {
+    z-index: 15;
+    top: 93%;
+    background-color: #f8433c;
+    height: 7%;
+    max-width: 5%;
+    opacity: 1;
+}
+
+.programa .carousel-control-prev {
+    left: 23%;
+}
+
+.programa .carousel-control-next {
+    right: 67%;
+}
+
+.programa .carousel-control-prev-icon {
+    background-image: url("../../../../assets/css/images/back.png");
+}
+
+.programa .carousel-control-next-icon {
+    background-image: url("../../../../assets/css/images/front.png");
+}
+
+.docentes {
+    font-family: 'Merriweather', serif;
+    text-shadow: none;
+}
+
+.docentes .carousel {
+    margin-right: 5%;
+    margin-left: 5%;
+    max-width: 1200px;
+}
+
+@media screen and (min-width: 1440px) {
+    .docentes .carousel {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1600px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .docentes .carousel {
+        max-width: 1800px;
+    }
+}
+
+.docentes .carousel .carousel-caption {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    text-shadow: none;
+}
+
+.docentes .title-text .text {
+    color: #280071;
+    font-family: FABRIK;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.docentes .title-text .title {
+    color: #f9423a;
+    font-family: TIEMPO;
+}
+
+.docentes .text_container {
+    max-width: 400px;
+    margin-left: 10%;
+}
+
+@media screen and (min-width: 1440px) {
+    .docentes .text_container {
+        max-width: 600px;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .docentes .text_container {
+        max-width: 800px;
+    }
+}
+
+.docentes .hero-title {
+    color: #fb4030;
+    text-decoration: none;
+}
+
+.docentes .img-fluid {
+    height: 100%;
+    visibility: hidden;
+    border-color: transparent;
+}
+
+.docentes .image {
+    background-size: cover;
+    background-position: center;
+}
+
+.docentes .cursos-title {
+    color: #fb4030;
+    font-size: 13px;
+    padding-right: 15%;
+    line-height: 15px;
+    text-shadow: none;
+    font-family: TIEMPO;
+}
+
+@media screen and (min-width: 1024px) {
+    .docentes .cursos-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .docentes .cursos-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .docentes .cursos-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+.docentes .cursos-title-2 {
+    color: #fb4030;
+    font-size: 15px;
+    line-height: 19px;
+    text-shadow: none;
+}
+
+.docentes .card-text {
+    background-color: #dcebec;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .docentes .card-text {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .docentes .card-text {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .docentes .card-text {
+        padding: 50px;
+    }
+}
+
+.docentes .cursos-text {
+    color: #43398a;
+    font-size: 10px;
+    line-height: 12px;
+    text-shadow: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .docentes .cursos-text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+.docentes .subtitle {
+    color: #fb4030;
+}
+
+.docentes .carousel-caption {
+    height: 100%;
+    text-shadow: none;
+}
+
+.docentes .cursos-button {
+    background-color: #dcecec;
+    color: #43398a;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-shadow: none;
+}
+
+.docentes .carousel-control-prev,
+.docentes .carousel-control-next {
+    z-index: 15;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    background-size: cover;
+}
+
+.docentes .carousel-control-prev .carousel-control-prev-icon,
+.docentes .carousel-control-next .carousel-control-prev-icon {
+    display: none;
+}
+
+.docentes .carousel-control-prev .carousel-control-next-icon,
+.docentes .carousel-control-next .carousel-control-next-icon {
+    display: none;
+}
+
+.docentes .carousel-control-prev {
+    background-image: url(../../../../assets/css/images/r2.png);
+}
+
+.docentes .carousel-control-next {
+    background-image: url(../../../../assets/css/images/r1.png);
+}
+
+.inscripcion {
+    /* P.S: if you like my content maybe you will become a donator and donate some money? That helps me to create new awesome materials. https://www.paypal.me/melnik909 */
+    /* ===== LEVEL 1. RESET STYLES ===== */
+    /* ===== LEVEL 2. CORE STYLES ===== */
+    /* ===== LEVEL 3. PRESENTATION STYLES ===== */
+    /* a-field */
+    /* a-field_a1 */
+    /* a-field_a2 */
+    /* a-field_a3 */
+    /* ===== LEVEL 4. SETTINGS ===== */
+    /* .radio {
+		 display: block;
+		 position: relative;
+		 padding-left: 30px;
+		 margin-bottom: 12px;
+		 cursor: pointer;
+		 -webkit-user-select: none;
+		 -moz-user-select: none;
+		 -ms-user-select: none;
+		 user-select: none 
+	}
+	/* Hide the browser's default radio button */
+    /* Reset Select */
+    /* Remove IE arrow */
+    /* Custom Select */
+    /* Arrow */
+    /* Transition */
+    /* Styling Checkbox Starts */
+    /* For Ripple Effect */
+}
+
+.inscripcion .carousel-caption {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    text-shadow: none;
+}
+
+.inscripcion .screen1 {
+    z-index: -4;
+    background-color: #280071;
+    background-size: cover;
+    max-width: 5000px;
+    font-size: 30px;
+}
+
+.inscripcion .screen1 .text {
+    opacity: 1;
+    color: #f8433c;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 100;
+    z-index: 3;
+    text-shadow: none;
+    text-decoration: underline #f8433c;
+}
+
+.inscripcion .screen2 {
+    z-index: -4;
+    background-image: url("../../../../assets/css/images/Cursos_presenciales_selectos/Fotos-IDEM--10.png");
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .inscripcion .screen2 .row {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .inscripcion .screen2 .row {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .inscripcion .screen2 .row {
+        padding-top: 25px;
+    }
+}
+
+.inscripcion .screen2 .white-container {
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(80% - 300px);
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    color: #280071;
+    font-size: 25px;
+    text-align: center;
+    z-index: 3;
+}
+
+@media screen and (min-width: 1024px) {
+    .inscripcion .screen2 .white-container {
+        left: 60%;
+        top: calc(50% - 200px);
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .inscripcion .screen2 .white-container {
+        top: calc(50% - 225px);
+        height: 450px;
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .inscripcion .screen2 .white-container {
+        top: calc(50% - 275px);
+        height: 550px;
+        width: 900px;
+    }
+}
+
+.inscripcion .screen2 .white-container .hero-title {
+    text-decoration: none;
+}
+
+.inscripcion .carousel-control-prev,
+.inscripcion .carousel-control-next {
+    z-index: 15;
+    top: 93%;
+    background-color: #f8433c;
+    height: 7%;
+    max-width: 5%;
+    opacity: 1;
+}
+
+.inscripcion .carousel-control-prev {
+    left: 33%;
+}
+
+.inscripcion .carousel-control-next {
+    right: 57%;
+}
+
+.inscripcion .comprar-btn,
+.inscripcion .agregar-btn {
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: FABRIK;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+    .inscripcion .comprar-btn,
+    .inscripcion .agregar-btn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .inscripcion .comprar-btn,
+    .inscripcion .agregar-btn {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .inscripcion .comprar-btn,
+    .inscripcion .agregar-btn {
+        font-size: 32px;
+    }
+}
+
+.inscripcion .agregar-btn {
+    border-color: #f94139;
+    background-color: transparent;
+}
+
+.inscripcion .field {
+    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+}
+
+.inscripcion .field__input {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.inscripcion .field__input:focus::-webkit-input-placeholder {
+    color: var(--uiFieldPlaceholderColor);
+}
+
+.inscripcion .field__input:focus::-moz-placeholder {
+    color: var(--uiFieldPlaceholderColor);
+    opacity: 1;
+}
+
+.inscripcion .a-field {
+    display: inline-block;
+}
+
+.inscripcion .a-field__input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.inscripcion .a-field__input:focus {
+    outline: none;
+}
+
+.inscripcion .a-field {
+    --uiFieldHeight: var(--fieldHeight, 28px);
+    --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+    --uiFieldBorderColor: var(--fieldBorderColor);
+    --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
+    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 15px);
+    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 0px);
+    font-family: FABRIK;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px) {
+    .inscripcion .a-field {
+        --uiFieldHeight: var(--fieldHeight, 38px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .inscripcion .a-field {
+        --uiFieldHeight: var(--fieldHeight, 44px);
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .inscripcion .a-field {
+        --uiFieldHeight: var(--fieldHeight, 64px);
+    }
+}
+
+.inscripcion .a-field .a-field__input {
+    height: var(--uiFieldHeight);
+    padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
+    border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);
+}
+
+.inscripcion .a-field .a-field__input::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.inscripcion .a-field .a-field__input::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.inscripcion .a-field .a-field__input:not(:placeholder-shown)~.a-field__label-wrap .a-field__label {
+    opacity: 0;
+    bottom: var(--uiFieldPaddingBottom);
+}
+
+.inscripcion .a-field .a-field__input:focus::-webkit-input-placeholder {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.inscripcion .a-field .a-field__input:focus::-moz-placeholder {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.inscripcion .a-field .a-field__label-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    height: var(--uiFieldHeight);
+    pointer-events: none;
+    cursor: text;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.inscripcion .a-field .a-field__label {
+    position: absolute;
+    left: var(--uiFieldPaddingLeft);
+    bottom: calc(50% - .8em);
+    line-height: 1;
+    pointer-events: none;
+    transition: bottom 0.2s cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity 0.2s ease-out;
+    will-change: bottom, opacity;
+}
+
+.inscripcion .a-field .a-field__input:focus~.a-field__label-wrap .a-field__label {
+    opacity: 1;
+    bottom: var(--uiFieldHeight);
+}
+
+.inscripcion .a-field_a1 .a-field__input {
+    transition: border-color 0.2s ease-out;
+    will-change: border-color;
+}
+
+.inscripcion .a-field_a1 .a-field__input:focus {
+    border-color: var(--fieldBorderColorActive);
+}
+
+.inscripcion .a-field_a2 .a-field__label-wrap:after {
+    content: "";
+    box-sizing: border-box;
+    width: 0;
+    height: var(--uiFieldBorderWidth);
+    background-color: var(--fieldBorderColorActive);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    will-change: width;
+    transition: width 0.285s ease-out;
+}
+
+.inscripcion .a-field_a2 .a-field__input:focus~.a-field__label-wrap:after {
+    width: 100%;
+}
+
+.inscripcion .a-field_a3 {
+    padding-top: 1.5em;
+}
+
+.inscripcion .a-field_a3 .a-field__label-wrap:after {
+    content: "";
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    border: var(--uiFieldBorderWidth) solid var(--fieldBorderColorActive);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    will-change: opacity, height;
+    transition: height 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.inscripcion .a-field_a3 .a-field__input:focus~.a-field__label-wrap:after {
+    height: 100%;
+    opacity: 1;
+}
+
+.inscripcion .a-field_a3 .a-field__input:focus~.a-field__label-wrap .a-field__label {
+    bottom: calc(var(--uiFieldHeight) + .5em);
+}
+
+.inscripcion .field {
+    --fieldBorderColor: #d1c4e9;
+    --fieldBorderColorActive: #673ab7;
+}
+
+.inscripcion select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: transparent;
+    background-image: none;
+    font-size: 10px;
+    font-family: FABRIK;
+}
+
+@media screen and (min-width: 1024px) {
+    .inscripcion select {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .inscripcion select {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .inscripcion select {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.inscripcion select::-ms-expand {
+    display: none;
+}
+
+.inscripcion .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 2;
+    background: trasnsparent;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.inscripcion select {
+    flex: 1;
+    padding: 0 0.5em;
+    color: #280071;
+}
+
+.inscripcion .select::after {
+    content: '\25BE';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #280071;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+}
+
+.inscripcion .select:hover::after {
+    color: #f8433c;
+}
+
+.inscripcion .card {
+    /* width: 500px;
+	 */
+    /* margin: 50px auto;
+	 */
+    /* clear: both;
+	 */
+    /* display: block;
+	 */
+    /* padding: 0px 0px;
+	 */
+    background-color: white;
+    /* border-radius: 4px;
+	 */
+    border: transparent;
+    flex-direction: row;
+}
+
+.inscripcion .input-title {
+    text-decoration: underline #280071;
+}
+
+.inscripcion .checkbox-label {
+    /* display: block;
+	 */
+    /* position: relative;
+	 */
+    /* margin: auto;
+	 */
+    cursor: pointer;
+    /* font-size: 22px;
+	 */
+    /* clear: both;
+	 */
+}
+
+.inscripcion .checkbox-label input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.inscripcion .checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid #270172;
+}
+
+.inscripcion .checkbox-label input:checked~.checkbox-custom {
+    background-color: transparent;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 2px solid #270172;
+}
+
+.inscripcion .checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #270172;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.inscripcion .checkbox-label input:checked~.checkbox-custom::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #270172;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.inscripcion .checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid #270172;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.inscripcion .checkbox-label input:checked~.checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.inscripcion .rectangle {
+    height: 160px;
+    width: 160px;
+    background-color: #270172;
+}
+
+.inscripcion .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.inscripcion .modal-dialog .modal-header {
+    /* display: flex;
+	 */
+    /* align-items: flex-start;
+	 */
+    /* justify-content: space-between;
+	 */
+    padding-right: 1rem;
+    padding-top: 1rem;
+    border-bottom: transparent;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.inscripcion .modal-dialog .modal-header .close {
+    float: right;
+    font-weight: 700;
+    line-height: 1;
+    color: #270172;
+    text-shadow: 0 1px 0 #270172;
+    opacity: 0.8;
+}

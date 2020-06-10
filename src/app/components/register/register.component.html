@@ -1,0 +1,196 @@
+<div *ngIf="logueado==0">
+    <h4 mat-dialog-title>
+        <mat-toolbar role="toolbar" class="task-header">
+            <div class="d-flex align-items-center">
+                <div><img src="../../../assets/css/images/LogoBlanco.png" width="40px"></div>
+                <div style="    margin-right: 56px;            margin-left: 10px;">
+                    <h3>Validar Datos</h3>
+                </div>
+                <div style="font-size: 10px;">Obten recomendaciones personalizadas según tus antecedentes</div>
+            </div>
+
+        </mat-toolbar>
+    </h4>
+
+
+    <mat-dialog-content class="fonfoFormulario">
+
+        <div class="container" style="margin-top: 18px;">
+
+            <div class="row">
+                <div class="col">
+                    <h3> <span class="titulosLogin" style="margin-top: 15px;">Registrate</span></h3>
+                    <div style="margin-right: 30px;" class="col-md-4">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Usuario</mat-label>
+                            <input matInput placeholder="correo@electronico.com">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Contraseña</mat-label>
+                            <input matInput type="password">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Correo Electrónico</mat-label>
+                            <input matInput type="password">
+                        </mat-form-field>
+                    </div>
+                    <div class="align-self-end">
+                        <p (click)="loguear(1)" class="text-lg-left botonesLogin">Registrar</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3><span class="titulosLogin" style="margin-top: 15px;">Iniciar sesión</span></h3>
+
+                    <div class="d-flex align-items-start flex-column bd-highlight mb-3" style="height: 240px;">
+                        <div class="mb-auto p-2 bd-highlight">
+                            <div style="margin-right: 30px;" class="col-md-4">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Usuario</mat-label>
+                                    <input matInput placeholder="correo@electronico.com">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-md-4">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Contraseña</mat-label>
+                                    <input matInput type="password">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <div class="align-self-end">
+                                <p class="align-text-bottom text-lg-left botonesLogin">Entrar</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </mat-dialog-content>
+</div>
+
+
+
+
+<!--YA LOGUEADO-->
+<div *ngIf="logueado==1">
+    <h4 mat-dialog-title>
+        <mat-toolbar role="toolbar" class="task-header">
+            <div class="d-flex align-items-center">
+                <div><img src="../../../assets/css/images/LogoBlanco.png" width="40px"></div>
+                <div style="    margin-right: 56px;            margin-left: 10px;">
+                    <h3>Bienvenido a IDEM Patrick Rodriguez</h3>
+                </div>
+                <div style="font-size: 10px;">Obten recomendaciones personalizadas según tus antecedentes</div>
+            </div>
+
+        </mat-toolbar>
+    </h4>
+
+    <mat-dialog-content class="fonfoFormulario">
+        <div class="container">
+            <h3><span class="titulosLogin" style="margin-top: 15px;">Experiencia Laboral</span></h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Profesión</mat-label>
+                        <input matInput placeholder="Ejemplo: Gerente de productos">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Nivel de experiencia</mat-label>
+                        <mat-select>
+                            <mat-option>None</mat-option>
+                            <mat-option value="option1">Option 1</mat-option>
+                            <mat-option value="option2">Option 2</mat-option>
+                            <mat-option value="option3">Option 3</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Empleador</mat-label>
+                        <input matInput placeholder="Ejemplo: Microsft">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <h3><span class="titulosLogin" style="margin-top: 15px;">Educación</span></h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Título</mat-label>
+                        <mat-select>
+                            <mat-option>None</mat-option>
+                            <mat-option value="option1">Bachiller</mat-option>
+                            <mat-option value="option2">Maestria</mat-option>
+                            <mat-option value="option3">Doctorado</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                </div>
+
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Universidad</mat-label>
+                        <input matInput placeholder="Ejemplo: Universidad de Lima">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Campo o especialización</mat-label>
+                        <mat-select>
+                            <mat-option>None</mat-option>
+                            <mat-option value="option1">Bachiller</mat-option>
+                            <mat-option value="option2">Maestria</mat-option>
+                            <mat-option value="option3">Doctorado</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                </div>
+            </div>
+
+            <h3><span class="titulosLogin" style="margin-top: 15px;">Objetivos Profesionales</span></h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Profesión</mat-label>
+                        <mat-select>
+                            <mat-option>None</mat-option>
+                            <mat-option value="option1">Bachiller</mat-option>
+                            <mat-option value="option2">Maestria</mat-option>
+                            <mat-option value="option3">Doctorado</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                </div>
+
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Industria</mat-label>
+                        <input matInput placeholder="Ejemplo: Universidad de Lima">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-danger omitir-btn"> Omitir </button>
+                    <button style="margin-left:10px" class="btn btn-danger continuar-btn"> Continuar</button>
+                </div>
+            </div>
+
+        </div>
+    </mat-dialog-content>
+
+</div>

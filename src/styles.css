@@ -12,3 +12,8 @@
     font-family: TIEMPO;
     src: url(./assets/css/images/fonts/TIEMPOSHEADLINE-BLACK.OTF) format("opentype");
 }
+
+.mat-dialog-container {
+    background-color: #f8433c;
+    font-family: TIEMPO;
+}

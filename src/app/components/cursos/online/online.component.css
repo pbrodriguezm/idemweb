@@ -1,0 +1,1836 @@
+@font-face {
+    font-family: FABRIKBOLD;
+    src: url(../../../../assets/css/images/fonts/FABRIK-BOLD_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: FABRIK;
+    src: url(../../../../assets/css/images/fonts/FABRIK-REGULAR_0.OTF) format("opentype");
+}
+
+@font-face {
+    font-family: TIEMPO;
+    src: url(../../../../assets/css/images/fonts/TIEMPOSHEADLINE-BLACK.OTF) format("opentype");
+}
+
+.cursosOnlineCODesktop a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cursosOnlineCODesktop .text_container {
+    width: 700px;
+    padding-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .text_container {
+        width: 900px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .text_container {
+        width: 1050px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .text_container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .text_container {
+        width: 1400px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel {
+    width: 700px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .carousel {
+        width: 900px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineCODesktop .carousel {
+        width: 1050px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel {
+        width: 1250px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel {
+        width: 1450px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption {
+        max-width: 1250px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption {
+        max-width: 1450px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container {
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container {
+        max-width: 1050px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container {
+        max-width: 1400px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper {
+    max-width: 325px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper {
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper {
+        max-width: 470px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper {
+        max-width: 580px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper {
+        max-width: 690px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+    max-width: 320px;
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+        max-width: 580px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+        max-width: 690px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .image {
+    background-image: url(../../../../assets/css/images/Home/Fotos-IDEM--15.png);
+    position: relative;
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .image .subtitle {
+    color: #280071;
+    font-family: FABRIK;
+    background-color: #dcebec;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .image .subtitle {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .image .subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text {
+    display: flex;
+    align-items: center;
+    background-color: #dcebec;
+    height: 40%;
+    width: 100%;
+    font-family: FABRIK;
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper {
+    min-width: 120px;
+    align-items: start;
+    height: 60%;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper {
+        min-width: 140px;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper {
+        min-width: 180px;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper {
+        min-width: 200px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper {
+        min-width: 240px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper .cursos-title {
+    color: #fb4030;
+    font-size: 14px;
+    line-height: 15px;
+    text-shadow: none;
+    font-family: TIEMPO;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper .cursos-title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper .cursos-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper .cursos-title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper {
+    padding-right: 25px;
+    position: relative;
+}
+
+.cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+    background-image: url(../../../../assets/css/images/cursoSelect/flechaRoja.png);
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+    height: 14px;
+    width: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+        right: 20px;
+        bottom: -20px;
+        height: 16px;
+        width: 28px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+        right: 20px;
+        bottom: -30px;
+        height: 16px;
+        width: 28px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+        right: 20px;
+        bottom: -40px;
+        height: 22px;
+        width: 36px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineCODesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+        right: 20px;
+        bottom: -40px;
+        height: 22px;
+        width: 36px;
+    }
+}
+
+.cursosOnlineCODesktop .cursos-button {
+    background-color: #dcecec;
+    color: #43398a;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-shadow: none;
+}
+
+.cursosOnlineCODesktop .carousel-control-prev,
+.cursosOnlineCODesktop .carousel-control-next {
+    z-index: 15;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    background-size: cover;
+}
+
+.cursosOnlineCODesktop .carousel-control-prev .carousel-control-prev-icon,
+.cursosOnlineCODesktop .carousel-control-next .carousel-control-prev-icon {
+    display: none;
+}
+
+.cursosOnlineCODesktop .carousel-control-prev .carousel-control-next-icon,
+.cursosOnlineCODesktop .carousel-control-next .carousel-control-next-icon {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineCODesktop .carousel-control-prev,
+    .cursosOnlineCODesktop .carousel-control-next {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.cursosOnlineCODesktop .carousel-control-prev {
+    background-image: url(../../../../assets/css/images/r2.png);
+}
+
+.cursosOnlineCODesktop .carousel-control-next {
+    background-image: url(../../../../assets/css/images/r1.png);
+}
+
+.cursosOnlineCODesktop .agregar-btn-selected {
+    max-height: 40px;
+    font-size: 14px;
+    border-color: #f94139;
+    font-family: FABRIK;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.cursosOnlineCODesktop .agregar-btn {
+    max-height: 40px;
+    border-color: transparent;
+    font-size: 14px;
+    font-family: FABRIK;
+    background-color: transparent;
+    border-radius: 0;
+    color: #280071;
+    min-width: 100px;
+}
+
+
+/*TEACHERS*/
+
+.nuestros_profesoresDesktop {
+    font-family: 'Merriweather', serif;
+    text-shadow: none;
+    background-color: #dcebec;
+}
+
+.nuestros_profesoresDesktop .carousel {
+    width: 75%;
+    padding: 0;
+}
+
+.nuestros_profesoresDesktop .carousel .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    height: 220px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .carousel .carousel-caption {
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .carousel .carousel-caption {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .carousel .carousel-caption {
+        height: 500px;
+    }
+}
+
+.nuestros_profesoresDesktop .firstRowSlide {
+    height: 220px;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .firstRowSlide {
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .firstRowSlide {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .firstRowSlide {
+        height: 500px;
+    }
+}
+
+.nuestros_profesoresDesktop .firstRowSlide .firstRow {
+    width: 100%;
+    height: 100%;
+}
+
+.nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card {
+    min-height: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card {
+        min-height: 240px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card {
+        min-height: 360px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card {
+        min-height: 430px;
+    }
+}
+
+.nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card .card-text {
+    padding: 15px;
+    background-color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card .card-text {
+        padding: 35px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card .card-text {
+        padding: 45px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card .card-text {
+        padding: 55px;
+    }
+}
+
+.nuestros_profesoresDesktop .firstRowSlide .firstRow .big-card .card-text .section-title {
+    color: #fb4030;
+}
+
+.nuestros_profesoresDesktop .carousel-wrapper {
+    align-items: center;
+    min-height: 220px;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .carousel-wrapper {
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .carousel-wrapper {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .carousel-wrapper {
+        height: 500px;
+    }
+}
+
+.nuestros_profesoresDesktop .docents-wrapper {
+    align-items: center;
+}
+
+.nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper {
+    height: 220px;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper {
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper {
+        height: 500px;
+    }
+}
+
+.nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 220px;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper {
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper {
+        height: 500px;
+    }
+}
+
+.nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD {
+    min-height: 200px;
+    display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD {
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD {
+        height: 360px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD {
+        height: 430px;
+    }
+}
+
+.nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD .card-text {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    padding: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD .card-text {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD .card-text {
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD .card-text {
+        padding: 45px;
+    }
+}
+
+.nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD .card-text .subtitle {
+    color: #fb4030;
+    padding-bottom: 5px;
+}
+
+.nuestros_profesoresDesktop .docents-wrapper .dualDocentWrapper .card-wrapper .carD .card-text .small-text {
+    text-align: left;
+}
+
+.nuestros_profesoresDesktop .ci1 {
+    background-image: url(../../../../assets/css/images/CursosOnline/Fotos-IDEM--20.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.nuestros_profesoresDesktop .ci2 {
+    background-image: url(../../../../assets/css/images/docentes/1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nuestros_profesoresDesktop .ci3 {
+    background-image: url(../../../../assets/css/images/docentes/2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nuestros_profesoresDesktop .ci4 {
+    background-image: url(../../../../assets/css/images/docentes/3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nuestros_profesoresDesktop .ci5 {
+    background-image: url(../../../../assets/css/images/docentes/5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nuestros_profesoresDesktop .cursos-title {
+    color: #fb4030;
+    font-size: 13px;
+    padding-right: 15%;
+    line-height: 15px;
+    text-shadow: none;
+    font-family: TIEMPO;
+}
+
+@media screen and (min-width: 1024px) {
+    .nuestros_profesoresDesktop .cursos-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .cursos-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .cursos-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+.nuestros_profesoresDesktop .carousel-control-prev {
+    left: 40%;
+}
+
+.nuestros_profesoresDesktop .carousel-control-next {
+    left: 45%;
+}
+
+.nuestros_profesoresDesktop .carousel-control-prev,
+.nuestros_profesoresDesktop .carousel-control-next {
+    z-index: 1500;
+    background-color: #280071;
+    opacity: 10;
+    max-height: 15%;
+    top: 85%;
+    max-width: 5%;
+}
+
+@media screen and (min-width: 1440px) {
+    .nuestros_profesoresDesktop .carousel-control-prev,
+    .nuestros_profesoresDesktop .carousel-control-next {
+        top: 80%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .nuestros_profesoresDesktop .carousel-control-prev,
+    .nuestros_profesoresDesktop .carousel-control-next {
+        top: 81%;
+    }
+}
+
+.nuestros_profesoresDesktop .carousel-control-prev-icon {
+    background-image: url("../../../../assets/css/images/back.png");
+}
+
+.nuestros_profesoresDesktop .carousel-control-next-icon {
+    background-image: url("../../../../assets/css/images/front.png");
+}
+
+.HeroOnlineCourses .carousel-caption {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.HeroOnlineCourses .screen1 {
+    background-size: cover;
+}
+
+.HeroOnlineCourses .screen1 .slideText {
+    margin-left: 80%;
+    max-width: 250px;
+}
+
+@media screen and (min-width: 1024px) {
+    .HeroOnlineCourses .screen1 .slideText {
+        margin-left: 80%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .HeroOnlineCourses .screen1 .slideText {
+        margin-left: 80%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .HeroOnlineCourses .screen1 .slideText {
+        margin-left: 80%;
+        max-width: 540px;
+    }
+}
+
+.HeroOnlineCourses .screen2 {
+    z-index: -4;
+    background-color: #dcebec;
+}
+
+.HeroOnlineCourses .screen2 .LogoBlanco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../../../assets/css/images/LogoBlanco.png");
+    height: 120px;
+    width: 100px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 769px) {
+    .HeroOnlineCourses .screen2 .LogoBlanco {
+        height: 185px;
+        width: 169px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .HeroOnlineCourses .screen2 .LogoBlanco {
+        height: 285px;
+        width: 269px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .HeroOnlineCourses .screen2 .LogoBlanco {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+.hero-title {
+    font-weight: normal;
+    color: #280071;
+    text-decoration: underline #280071;
+    text-align: left;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 100;
+    z-index: 35;
+    font-family: TIEMPO;
+    text-shadow: none;
+}
+
+.beneficiosOnlineCourses {
+    height: 225px;
+    background-color: #f9423a;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses {
+        height: 500px;
+    }
+}
+
+.beneficiosOnlineCourses .columna1 {
+    height: 225px;
+    background-color: white;
+    color: #280071;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .columna1 {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .columna1 {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .columna1 {
+        height: 500px;
+    }
+}
+
+.beneficiosOnlineCourses .columna2 {
+    color: #280071;
+    font-size: 10px;
+}
+
+.beneficiosOnlineCourses .text-wrapper {
+    width: 100%;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1232px) {
+    .beneficiosOnlineCourses .text-wrapper {
+        width: 80%;
+    }
+}
+
+.beneficiosOnlineCourses .icon1 {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .icon1 {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .icon1 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .icon1 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.beneficiosOnlineCourses .icon2 {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .icon2 {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .icon2 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .icon2 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.beneficiosOnlineCourses .icon3 {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .icon3 {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .icon3 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .icon3 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.beneficiosOnlineCourses .icon4 {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .icon4 {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .icon4 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .icon4 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.beneficiosOnlineCourses .title {
+    text-decoration: none;
+}
+
+.beneficiosOnlineCourses .icon-text {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.beneficiosOnlineCourses {
+    height: 225px;
+    background-color: #f9423a;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses {
+        height: 500px;
+    }
+}
+
+.beneficiosOnlineCourses .columna1 {
+    height: 225px;
+    background-color: white;
+    color: #280071;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .columna1 {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .columna1 {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .columna1 {
+        height: 500px;
+    }
+}
+
+.beneficiosOnlineCourses .columna2 {
+    color: #280071;
+    font-size: 10px;
+}
+
+.beneficiosOnlineCourses .text-wrapper {
+    width: 100%;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1232px) {
+    .beneficiosOnlineCourses .text-wrapper {
+        width: 80%;
+    }
+}
+
+.beneficiosOnlineCourses .icon1 {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .icon1 {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .icon1 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .icon1 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.beneficiosOnlineCourses .icon2 {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .icon2 {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .icon2 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .icon2 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.beneficiosOnlineCourses .icon3 {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .icon3 {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .icon3 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .icon3 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.beneficiosOnlineCourses .icon4 {
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .beneficiosOnlineCourses .icon4 {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .beneficiosOnlineCourses .icon4 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .beneficiosOnlineCourses .icon4 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.beneficiosOnlineCourses .title {
+    text-decoration: none;
+}
+
+.beneficiosOnlineCourses .icon-text {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.section-title {
+    color: #280071;
+    text-align: left;
+    font-size: 21px;
+    z-index: 35;
+    font-family: TIEMPO;
+    text-shadow: none;
+}
+
+@media screen and (min-width: 769px) {
+    .section-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 896px) {
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section-title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .section-title {
+        font-size: 45px;
+    }
+}
+
+.como_funciona {
+    /* The switch - the box around the slider */
+    /* Hide default HTML checkbox */
+    /* The slider */
+    /* Rounded sliders */
+}
+
+.como_funciona .carousel-caption {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    text-shadow: none;
+}
+
+.como_funciona .screen1 {
+    z-index: -4;
+    background-color: #dcebec;
+    background-size: cover;
+    max-width: 5000px;
+    font-size: 30px;
+}
+
+.como_funciona .screen1 .text {
+    opacity: 1;
+    color: #f8433c;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 100;
+    z-index: 3;
+    text-shadow: none;
+    text-decoration: underline #f8433c;
+}
+
+.como_funciona .screen2 {
+    z-index: -4;
+    background-color: #280071;
+}
+
+.como_funciona .screen2 .white-container {
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    min-width: 260px;
+    height: 150px;
+    background-color: white;
+    z-index: 3;
+}
+
+@media screen and (min-width: 1024px) {
+    .como_funciona .screen2 .white-container {
+        min-width: 320px;
+        height: 190px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .como_funciona .screen2 .white-container {
+        min-width: 360px;
+        height: 210px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .como_funciona .screen2 .white-container {
+        min-width: 400px;
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .como_funciona .screen2 .white-container {
+        min-width: 500px;
+        height: 360px;
+    }
+}
+
+.como_funciona .screen2 .white-container .section-title {
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .como_funciona .screen2 .white-container .section-title {
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .como_funciona .screen2 .white-container .section-title {
+        line-height: 45px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .como_funciona .screen2 .white-container .section-title {
+        line-height: 55px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .como_funciona .screen2 .white-container .section-title {
+        line-height: 65px;
+    }
+}
+
+.como_funciona .carousel-control-prev,
+.como_funciona .carousel-control-next {
+    z-index: 15;
+    top: 93%;
+    background-color: #f8433c;
+    height: 7%;
+    max-width: 5%;
+    opacity: 1;
+}
+
+.como_funciona .carousel-control-prev {
+    left: 33%;
+}
+
+.como_funciona .carousel-control-next {
+    right: 57%;
+}
+
+.como_funciona .overflow {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 400px;
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (min-width: 896px) {
+    .como_funciona .overflow {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .como_funciona .overflow {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .como_funciona .overflow {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .como_funciona .overflow {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .como_funciona .overflow {
+        width: 800px;
+    }
+}
+
+.como_funciona .overflow .card .arrow {
+    position: absolute;
+    background-image: url(../../../../assets/css/images/r3.png);
+    background-size: cover;
+    top: calc(50% - 10px);
+    right: 0px;
+    height: 15px;
+    width: 15px;
+}
+
+.como_funciona .overflow .card .image,
+.como_funciona .overflow .card .image2,
+.como_funciona .overflow .card .image3 {
+    background: url(../../../../assets/css/images/Cursos_presenciales_selectos/grupo.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+@media screen and (min-width: 896px) {
+    .como_funciona .overflow .card .image,
+    .como_funciona .overflow .card .image2,
+    .como_funciona .overflow .card .image3 {
+        min-height: 100px;
+        min-width: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .como_funciona .overflow .card .image,
+    .como_funciona .overflow .card .image2,
+    .como_funciona .overflow .card .image3 {
+        min-height: 150px;
+        min-width: 150px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .como_funciona .overflow .card .image,
+    .como_funciona .overflow .card .image2,
+    .como_funciona .overflow .card .image3 {
+        min-height: 180px;
+        min-width: 180px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .como_funciona .overflow .card .image,
+    .como_funciona .overflow .card .image2,
+    .como_funciona .overflow .card .image3 {
+        min-height: 220px;
+        min-width: 220px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .como_funciona .overflow .card .image,
+    .como_funciona .overflow .card .image2,
+    .como_funciona .overflow .card .image3 {
+        min-height: 270px;
+        min-width: 270px;
+    }
+}
+
+.como_funciona .overflow .card .image2 {
+    background: url(../../../../assets/css/images/Cursos_presenciales_selectos/mano.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.como_funciona .overflow .card .image3 {
+    background: url(../../../../assets/css/images/Cursos_presenciales_selectos/check.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.como_funciona .overflow .card .text-container .normal-text {
+    color: #fb4030;
+    min-width: 60px;
+}
+
+@media screen and (min-width: 896px) {
+    .como_funciona .overflow .card .text-container .normal-text {
+        min-width: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .como_funciona .overflow .card .text-container .normal-text {
+        min-width: 80px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .como_funciona .overflow .card .text-container .normal-text {
+        min-width: 80px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .como_funciona .overflow .card .text-container .normal-text {
+        min-width: 100px;
+    }
+}
+
+.como_funciona .indicator-container {
+    max-width: 5000px;
+    min-width: 500px;
+}
+
+.como_funciona #style-2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.como_funciona #style-2::-webkit-scrollbar {
+    height: 7px;
+    background-color: #f5f5f5;
+}
+
+.como_funciona #style-2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #280071;
+}
+
+.como_funciona .switch {
+    position: relative;
+    display: inline-block;
+    width: calc(60px + 240px);
+    height: calc(10px + 0px);
+}
+
+.como_funciona .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.como_funciona .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.como_funciona .slider:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: #280071;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.como_funciona input:checked+.slider {
+    background-color: white;
+}
+
+.como_funciona input:focus+.slider {
+    box-shadow: 0 0 1px white;
+}
+
+.como_funciona input:checked+.slider:before {
+    -webkit-transform: translateX(250px);
+    -ms-transform: translateX(26px);
+    transform: translateX(95%);
+}
+
+.como_funciona .slider.round {
+    border-radius: 34px;
+}
+
+
+/**Testimonials*/
+
+.online_testimonials .carousel-caption {
+    font-family: "Merriweather", serif;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    text-shadow: none;
+}
+
+.online_testimonials .screen2 {
+    z-index: -4;
+    background-image: url("../../../../assets/css/images/Donaciones/testimonio_1_bg.png");
+    background-size: cover;
+    max-width: 5000px;
+}
+
+.online_testimonials .screen2 .text-container {
+    padding: 0px 50px 0px 30%;
+}
+
+@media screen and (min-width: 1232px) {
+    .online_testimonials .screen2 .text-container {
+        padding: 0px 20% 0px 25%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .online_testimonials .screen2 .text-container {
+        padding: 0px 25% 0px 25%;
+    }
+}
+
+.online_testimonials .screen2 .text-container .comillas {
+    font-size: 155px;
+    text-align: left;
+    margin: 0px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .online_testimonials .screen2 .text-container .comillas {
+        font-size: 155px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .online_testimonials .screen2 .text-container .comillas {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .online_testimonials .screen2 .text-container .comillas {
+        font-size: 100px;
+    }
+}
+
+.online_testimonials .screen2 .text-container .nombre {
+    font-family: FABRIK;
+    text-align: left;
+    color: #fb4030;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .online_testimonials .screen2 .text-container .nombre {
+        font-size: 15px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .online_testimonials .screen2 .text-container .nombre {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .online_testimonials .screen2 .text-container .nombre {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .online_testimonials .screen2 .text-container .nombre {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+.online_testimonials .screen-filter {
+    background-color: rgba(127, 205, 199, 0.7);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.online_testimonials .screen1 {
+    z-index: -4;
+    background-color: #dcebec;
+}
+
+.online_testimonials .screen1 .white_container {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(100% - 105px);
+    min-width: 250px;
+    min-height: 160px;
+    z-index: 8;
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .online_testimonials .screen1 .white_container {
+        min-width: 300px;
+        min-height: 200px;
+        left: calc(100% - 135px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .online_testimonials .screen1 .white_container {
+        top: calc(50% - 125px);
+        min-width: 350px;
+        min-height: 250px;
+        left: calc(100% - 135px);
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .online_testimonials .screen1 .white_container {
+        top: calc(50% - 150px);
+        min-width: 450px;
+        min-height: 300px;
+        left: calc(100% - 135px);
+    }
+}
+
+.online_testimonials .carousel-control-prev,
+.online_testimonials .carousel-control-next {
+    position: absolute;
+    z-index: 50000;
+    top: calc(50% + 85px);
+    opacity: 1;
+    height: 7%;
+    width: 40px;
+    background-color: #280071;
+}
+
+@media screen and (min-width: 1024px) {
+    .online_testimonials .carousel-control-prev,
+    .online_testimonials .carousel-control-next {
+        top: calc(50% + 125px);
+        min-width: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .online_testimonials .carousel-control-prev,
+    .online_testimonials .carousel-control-next {
+        top: calc(50% + 125px);
+        min-width: 62px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .online_testimonials .carousel-control-prev,
+    .online_testimonials .carousel-control-next {
+        top: calc(50% + 150px);
+        min-width: 90px;
+    }
+}
+
+.online_testimonials .carousel-control-prev {
+    left: calc(30% + 20px);
+}
+
+@media screen and (min-width: 1024px) {
+    .online_testimonials .carousel-control-prev {
+        left: calc(25% + 65px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .online_testimonials .carousel-control-prev {
+        left: calc(25% + 94px);
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .online_testimonials .carousel-control-prev {
+        left: calc(25% + 135px);
+    }
+}
+
+.online_testimonials .carousel-control-next {
+    left: calc(30% + 60px);
+}
+
+@media screen and (min-width: 1024px) {
+    .online_testimonials .carousel-control-next {
+        left: calc(25% + 115px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .online_testimonials .carousel-control-next {
+        left: calc(25% + 155px);
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .online_testimonials .carousel-control-next {
+        left: calc(25% + 225px);
+    }
+}
+
+.online_testimonials .carousel-control-prev-icon {
+    background-image: url("../../../../assets/css/images/back.png");
+}
+
+.online_testimonials .carousel-control-next-icon {
+    background-image: url("../../../../assets/css/images/front.png");
+}
