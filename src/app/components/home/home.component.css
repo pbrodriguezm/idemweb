@@ -13,14 +13,381 @@
     src: url(../../../assets/css/images/fonts/TIEMPOSHEADLINE-BLACK.OTF) format("opentype");
 }
 
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .text_container {
+        width: 900px;
+        padding-left: 40px;
+    }
 }
 
-.section-title {
-    font-size: 30px;
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .text_container {
+        width: 1050px;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .text_container {
+        width: 1200px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .text_container {
+        width: 1400px;
+        padding-left: 20px;
+    }
+}
+
+.cursosOnlineDesktop .carousel {
+    width: 700px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .carousel {
+        width: 900px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineDesktop .carousel {
+        width: 1050px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel {
+        width: 1250px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel {
+        width: 1450px;
+    }
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption {
+    position: inherit;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    height: 85vh;
+    width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel .carousel-caption {
+        max-width: 1250px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel .carousel-caption {
+        max-width: 1450px;
+    }
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container {
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container {
+        max-width: 1050px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container {
+        max-width: 1400px;
+    }
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper {
+    max-width: 325px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper {
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper {
+        max-width: 470px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper {
+        max-width: 580px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper {
+        max-width: 690px;
+    }
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+    max-width: 320px;
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+        max-width: 580px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card {
+        max-width: 690px;
+    }
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .image {
+    background-image: url(../../../assets/css/images/Home/Fotos-IDEM--15.png);
+    position: relative;
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .image .subtitle {
+    color: #280071;
+    font-family: FABRIK;
+    background-color: #dcebec;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .image .subtitle {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .image .subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text {
+    display: flex;
+    align-items: center;
+    background-color: #dcebec;
+    height: 40%;
+    width: 100%;
+    font-family: FABRIK;
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper {
+    min-width: 120px;
+    align-items: start;
+    height: 60%;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .carousel .card-container .card-wrapper .card .card-text .title-wrapper {
+        min-width: 140px;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineDesktop .carousel .card-container .card-wrapper .card .card-text .title-wrapper {
+        min-width: 180px;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel .card-container .card-wrapper .card .card-text .title-wrapper {
+        min-width: 200px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper {
+        min-width: 240px;
+    }
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper .cursos-title {
+    color: #fb4030;
+    font-size: 14px;
+    line-height: 15px;
+    text-shadow: none;
     font-family: TIEMPO;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper .cursos-title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper .cursos-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .title-wrapper .cursos-title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper {
+    padding-right: 25px;
+    position: relative;
+}
+
+.cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+    background-image: url(../../../assets/css/images/cursoSelect/flechaRoja.png);
+    background-size: cover;
+    right: 20px;
+    bottom: -10px;
+    height: 14px;
+    width: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+        right: 20px;
+        bottom: -20px;
+        height: 16px;
+        width: 28px;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+        right: 20px;
+        bottom: -30px;
+        height: 16px;
+        width: 28px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+        right: 20px;
+        bottom: -40px;
+        height: 22px;
+        width: 36px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cursosOnlineDesktop .carousel .carousel-caption .card-container .card-wrapper .card .card-text .text-wrapper .flecha {
+        right: 20px;
+        bottom: -40px;
+        height: 22px;
+        width: 36px;
+    }
+}
+
+.cursosOnlineDesktop .cursos-button {
+    background-color: #dcecec;
+    color: #43398a;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-shadow: none;
+}
+
+.cursosOnlineDesktop .carousel-control-prev,
+.cursosOnlineDesktop .carousel-control-next {
+    z-index: 15;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    background-size: cover;
+}
+
+.cursosOnlineDesktop .carousel-control-prev .carousel-control-prev-icon,
+.cursosOnlineDesktop .carousel-control-next .carousel-control-prev-icon {
+    display: none;
+}
+
+.cursosOnlineDesktop .carousel-control-prev .carousel-control-next-icon,
+.cursosOnlineDesktop .carousel-control-next .carousel-control-next-icon {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .cursosOnlineDesktop .carousel-control-prev,
+    .cursosOnlineDesktop .carousel-control-next {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.cursosOnlineDesktop .carousel-control-prev {
+    background-image: url(/r2.png);
+}
+
+.cursosOnlineDesktop .carousel-control-next {
+    background-image: url(/r1.png);
+}
+
+.cursosOnlineDesktop .agregar-btn-selected {
+    max-height: 40px;
+    font-size: 14px;
+    border-color: #f94139;
+    font-family: FABRIK;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.cursosOnlineDesktop .agregar-btn {
+    max-height: 40px;
+    border-color: transparent;
+    font-size: 14px;
+    font-family: FABRIK;
+    background-color: transparent;
+    border-radius: 0;
+    color: #280071;
+    min-width: 100px;
 }

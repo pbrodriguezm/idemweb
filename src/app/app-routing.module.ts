@@ -15,9 +15,7 @@ const routes: Routes = [
   {path: 'curso/:cursoId',component: CursosComponent },
   {path: 'presenciales/:cursoId',component: PresencialComponent },
   {path: 'cursos/online',component: OnlineComponent }
-
   
-
 
 ];
 

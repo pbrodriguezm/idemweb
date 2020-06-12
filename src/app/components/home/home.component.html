@@ -66,7 +66,7 @@
             <div class="px-4 pr-5 franja-option h-100 d-flex flex-column justify-content-center">CURSOS DE TECNOLOGIA</div>
         </div>
     </div>
-    <div class="cursosOnlineDesktop container-fluid d-flex flex-column justify-content-center inf px-2 px-lg-5" id="page_2" style="height: 100vh;">
+    <div class="cursosOnlineDesktop container-fluid d-flex flex-column justify-content-center inf px-2 px-lg-5" id="page_2" style="height: 100vh; padding-top: 90px;">
         <div class="d-flex justify-content-center py-0">
             <div class="text_container">
                 <div class="title-text d-flex justify-content-between">
@@ -78,19 +78,76 @@
         </div>
 
 
+        <!-- PRUEBS-->
         <div class="d-flex w-100 justify-content-center">
+            <ngb-carousel style="height: 100vh; " id="carousel1" :interval="4000" class="carousel" controls>
+                <ng-template ngbSlide style=" height: 70vh;">
+                    <div class="carousel-caption">
+                        <div class="container d-flex justify-content-center w-100 h-100 px-0">
+                            <div class="card-container px-0 w-100 h-100 m-0">
+                                <div class="card-wrapper d-flex justify-content-center col-6 px-2 py-2">
+                                    <div class="card">
+                                        <div class="image">
+                                            <div class="subtitle px-4 py-1  d-flex justify-content-center" style="position:absolute;left:0;bottom:0;">
+                                                NEGOCIOS
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="title-wrapper d-flex justify-content-start">
+                                                <span class="text-left cursos-title px-0">Curso de derecho Concursal</span>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <p class="small-text text-left pt-0 pl-lg-1">
+                                                    El curso de Derecho Concursal abordará en 6 módulos los siguientes temas: una aproximación al Derecho Concursal, el inicio del Procedimiento Concursal Ordinario, reconocimiento y verficación de créditos, junta de acreedores, administración del régimen
+                                                    sancionador, destino del deudor y los procedimientos pre-concursales y distressed M&A.
+                                                </p>
+                                                <a href="/cursoSelect/">
+                                                    <div class="flecha"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-wrapper d-flex justify-content-center col-6 px-2 py-2">
+                                    <div class="card">
+                                        <div class="image">
+                                            <div class="subtitle px-4 py-1  d-flex justify-content-center" style="position:absolute;left:0;bottom:0;">
+                                                NEGOCIOS
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="title-wrapper d-flex justify-content-start">
+                                                <span class="text-left cursos-title px-0">Curso de derecho Concursal</span>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <p class="small-text text-left pt-0 pl-lg-1">
+                                                    El curso de Derecho Concursal abordará en 6 módulos los siguientes temas: una aproximación al Derecho Concursal, el inicio del Procedimiento Concursal Ordinario, reconocimiento y verficación de créditos, junta de acreedores, administración del régimen
+                                                    sancionador, destino del deudor y los procedimientos pre-concursales y distressed M&A.
+                                                </p>
+                                                <a href="/cursos_online">
+                                                    <div class="flecha"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <!--<div class="d-flex w-100 justify-content-center">
             <div role="region" id="carousel1" aria-busy="false" class="carousel carousel slide">
                 <div id="carousel1___BV_inner_" role="list" class="carousel-inner">
                     <div role="listitem" class="carousel-item active" aria-current="true" aria-posinset="1" aria-setsize="1" style="height: 80vh;" id="__BVID__23">
-                        <!---->
+                        
                         <ngb-carousel class="carousel-caption">
-                            <!---->
-                            <!---->
-
+                        
                             <ng-template ngbSlide *ngFor="let itemcurso of idemcursoList" class="d-flex justify-content-center w-100 h-100 px-0">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <!--OJO AQUI CAMBIAR EL ALTO-->
+                                        
                                         <div class="card-container px-0 w-100 h-100 m-0" style="min-height:550px">
                                             <div class="card-wrapper d-flex justify-content-center col-6 px-2 py-2">
                                                 <div class="card">
@@ -119,7 +176,7 @@
 
                                     <div class="col-md-4">
 
-                                        <!--OJO AQUI CAMBIAR EL ALTO-->
+                                       
                                         <div class="card-container px-0 w-100 h-100 m-0" style="min-height:550px">
                                             <div class="card-wrapper d-flex justify-content-center col-6 px-2 py-2">
                                                 <div class="card">
@@ -153,7 +210,7 @@
                 </div>
 
             </div>
-        </div>
+        </div>-->
     </div>
     <div class="cursospresenciales p-0 container-fluid" id="page_3">
         <div role="region" id="carousel1" aria-busy="false" class="carousel p-0 slide" style="background: rgb(171, 171, 171); text-shadow: rgb(51, 51, 51) 1px 1px 2px;">
