@@ -66,6 +66,9 @@
                             <div class="align-self-end">
                                 <p class="align-text-bottom text-lg-left botonesLogin">Entrar</p>
                             </div>
+                            <div class="align-self-end">
+                                <p (click)="signInWithGoogle()" class="align-text-bottom text-lg-left botonesLogin" style="font-size: 10px;">Gmail</p>
+                            </div>
                         </div>
 
                     </div>
@@ -90,7 +93,7 @@
             <div class="d-flex align-items-center">
                 <div><img src="../../../assets/css/images/LogoBlanco.png" width="40px"></div>
                 <div style="    margin-right: 56px;            margin-left: 10px;">
-                    <h3>Bienvenido a IDEM Patrick Rodriguez</h3>
+                    <h3>Bienvenido a IDEM {{ user.name }}</h3>
                 </div>
                 <div style="font-size: 10px;">Obten recomendaciones personalizadas según tus antecedentes</div>
             </div>

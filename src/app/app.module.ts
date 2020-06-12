@@ -12,13 +12,17 @@ import { OnlineComponent } from './components/cursos/online/online.component';
 import { PresencialComponent } from './components/cursos/presencial/presencial.component';
 import { HomeComponent } from './components/home/home.component';
 
+import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
+import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
+
+
 /**Material Imports */
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
 /**Social*/
 
 /* Mis servicios*/
@@ -42,6 +46,18 @@ import { IntrospectionService } from '../services/api/introspection.service';
 import { ItemTipocursosService } from '../services/api/itemTipocursos.service';
 import { RegisterComponent } from './components/register/register.component';
 
+
+let config = new AuthServiceConfig([
+  {
+    id: GoogleLoginProvider.PROVIDER_ID,
+    provider: new GoogleLoginProvider("871082404913-ve78njuutnpnp6ktkupqv6agu652r7b7.apps.googleusercontent.com")
+  }
+]);
+ 
+export function provideConfig() {
+  return config;
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +77,9 @@ import { RegisterComponent } from './components/register/register.component';
     MatInputModule,
     MatSelectModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTooltipModule,
+    SocialLoginModule
 
   ],
   providers: [ IdemAlumnosService,
@@ -80,7 +98,11 @@ import { RegisterComponent } from './components/register/register.component';
     IdemRelCursosModulosService,
     IdemUsuariosService,
     IntrospectionService,
-    ItemTipocursosService ],
+    ItemTipocursosService,
+    {
+      provide: AuthServiceConfig,
+      useFactory: provideConfig
+    } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

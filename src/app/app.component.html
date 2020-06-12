@@ -29,8 +29,16 @@
                     <div class="nav-icon n1"></div>
                 </a>
 
-                <a class="d-flex justify-content-center mt-4">
+
+
+                <a *ngIf="!loggedIn" matTooltip="Iniciar sesión" (click)="openRegistro()" class="d-flex justify-content-center mt-4" style="cursor: pointer;">
+
                     <div class="nav-icon n2"></div>
+                </a>
+
+                <a *ngIf="loggedIn" matTooltip="Mi Perfil" (click)="openRegistro()" class="d-flex justify-content-center mt-4" style="cursor: pointer;">
+
+                    <div class="nav-icon"><img class="rounded-circle" style="margin-left: -5px;" width="31px" [src]="user.photoUrl"></div>
                 </a>
 
             </div>
