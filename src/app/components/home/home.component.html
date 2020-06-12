@@ -85,7 +85,8 @@
                     <div class="carousel-caption">
                         <div class="container d-flex justify-content-center w-100 h-100 px-0">
                             <div class="card-container px-0 w-100 h-100 m-0">
-                                <div class="card-wrapper d-flex justify-content-center col-6 px-2 py-2">
+
+                                <div *ngFor="let itemcurso of idemcursoList.slice(0, 2); " class="card-wrapper d-flex justify-content-center col-6 px-2 py-2">
                                     <div class="card">
                                         <div class="image">
                                             <div class="subtitle px-4 py-1  d-flex justify-content-center" style="position:absolute;left:0;bottom:0;">
@@ -93,38 +94,14 @@
                                             </div>
                                         </div>
                                         <div class="card-text">
-                                            <div class="title-wrapper d-flex justify-content-start">
-                                                <span class="text-left cursos-title px-0">Curso de derecho Concursal</span>
+                                            <div class="title-wrapper  d-flex justify-content-start" style="padding-right: 50px;">
+                                                <span class="text-left cursos-title px-0">{{itemcurso.nombre}}</span>
                                             </div>
                                             <div class="text-wrapper">
                                                 <p class="small-text text-left pt-0 pl-lg-1">
-                                                    El curso de Derecho Concursal abordará en 6 módulos los siguientes temas: una aproximación al Derecho Concursal, el inicio del Procedimiento Concursal Ordinario, reconocimiento y verficación de créditos, junta de acreedores, administración del régimen
-                                                    sancionador, destino del deudor y los procedimientos pre-concursales y distressed M&A.
+                                                    {{itemcurso.descripcion}}...
                                                 </p>
-                                                <a href="/cursoSelect/">
-                                                    <div class="flecha"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-wrapper d-flex justify-content-center col-6 px-2 py-2">
-                                    <div class="card">
-                                        <div class="image">
-                                            <div class="subtitle px-4 py-1  d-flex justify-content-center" style="position:absolute;left:0;bottom:0;">
-                                                NEGOCIOS
-                                            </div>
-                                        </div>
-                                        <div class="card-text">
-                                            <div class="title-wrapper d-flex justify-content-start">
-                                                <span class="text-left cursos-title px-0">Curso de derecho Concursal</span>
-                                            </div>
-                                            <div class="text-wrapper">
-                                                <p class="small-text text-left pt-0 pl-lg-1">
-                                                    El curso de Derecho Concursal abordará en 6 módulos los siguientes temas: una aproximación al Derecho Concursal, el inicio del Procedimiento Concursal Ordinario, reconocimiento y verficación de créditos, junta de acreedores, administración del régimen
-                                                    sancionador, destino del deudor y los procedimientos pre-concursales y distressed M&A.
-                                                </p>
-                                                <a href="/cursos_online">
+                                                <a href="/curso/{{itemcurso.idcurso}}">
                                                     <div class="flecha"></div>
                                                 </a>
                                             </div>
@@ -390,7 +367,7 @@
                                                 <div class="w-100 d-flex justify-content-start">
 
                                                     <div class="small-text cursos-button px-2 py-0 w-50">
-                                                        EL COMERCIO</div>
+                                                        Echocopar</div>
                                                 </div>
                                             </div>
 
@@ -400,12 +377,12 @@
                                         <div class="card d-flex flex-column justify-content-start pt-0 text-center">
                                             <div class="card-image ci1 w-100 pt-0 d-flex flex-column justify-content-end">
                                                 <div class="w-100 d-flex justify-content-start">
-                                                    <div class="small-text cursos-button px-2 py-0 w-50">EL COMERCIO</div>
+                                                    <div class="small-text cursos-button px-2 py-0 w-50">EL Echocopar</div>
                                                 </div>
                                             </div>
                                             <div class="card-text w-100 d-flex flex-column justify-content-start pt-0">
                                                 <p class="small-text cursos-text">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan dui eget tincidunt tristique Duis.</p>
+                                                    Lorem ipsudfdfmet, consectetur adipiscing elit. Sed accumsan dui eget tincidunt tristique Duis.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -418,7 +395,7 @@
                                             </div>
                                             <div class="card-text w-100 d-flex flex-column justify-content-start pt-0">
                                                 <p class="small-text cursos-text">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan dui eget tincidunt tristique Duis.</p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisci5555umsan dui eget tincidunt tristique Duis.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -433,40 +410,25 @@
                                     <div class="col-4 d-flex flex-column justify-content-center col">
                                         <div class="card d-flex flex-column justify-content-start pt-0 text-center">
                                             <div class="card-image ci1 w-100 pt-0 d-flex flex-column justify-content-end">
-                                                <div class="w-100 d-flex justify-content-start">
-                                                    <div class="small-text cursos-button px-2 py-0 w-50">EL COMERCIO</div>
-                                                </div>
+
                                             </div>
-                                            <div class="card-text w-100 d-flex flex-column justify-content-start pt-0">
-                                                <p class="small-text cursos-text">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan dui eget tincidunt tristique Duis.</p>
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="col-4 d-flex flex-column justify-content-center col">
                                         <div class="card d-flex flex-column justify-content-start pt-0 text-center">
                                             <div class="card-image ci1 w-100 pt-0 d-flex flex-column justify-content-end">
-                                                <div class="w-100 d-flex justify-content-start">
-                                                    <div class="small-text cursos-button px-2 py-0 w-50">EL COMERCIO</div>
-                                                </div>
+
                                             </div>
-                                            <div class="card-text w-100 d-flex flex-column justify-content-start pt-0">
-                                                <p class="small-text cursos-text">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan dui eget tincidunt tristique Duis.</p>
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="col-4 d-flex flex-column justify-content-center col">
                                         <div class="card d-flex flex-column justify-content-start pt-0 text-center">
                                             <div class="card-image ci1 w-100 pt-0 d-flex flex-column justify-content-end">
-                                                <div class="w-100 d-flex justify-content-start">
-                                                    <div class="small-text cursos-button px-2 py-0 w-50">EL COMERCIO2</div>
-                                                </div>
+
                                             </div>
-                                            <div class="card-text w-100 d-flex flex-column justify-content-start pt-0">
-                                                <p class="small-text cursos-text">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan dui eget tincidunt tristique Duis.</p>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>

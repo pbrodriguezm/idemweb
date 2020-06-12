@@ -391,3 +391,164 @@
     color: #280071;
     min-width: 100px;
 }
+
+.estartegicAllies {
+    height: 250px;
+    background-color: #280071;
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .estartegicAllies {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .estartegicAllies {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .estartegicAllies {
+        height: 500px;
+    }
+}
+
+.estartegicAllies .blog_tittle {
+    color: #dcebec;
+}
+
+.estartegicAllies .img-fluid {
+    height: 100%;
+    visibility: hidden;
+    border-color: transparent;
+}
+
+.estartegicAllies .card {
+    height: 100%;
+    width: 100%;
+    background-color: #280071;
+    border: none;
+}
+
+.estartegicAllies .card-image {
+    min-height: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+    .estartegicAllies .card-image {
+        min-height: 120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .estartegicAllies .card-image {
+        min-height: 150px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .estartegicAllies .card-image {
+        min-height: 180px;
+    }
+}
+
+.estartegicAllies .ci1 {
+    background-image: url(../../../assets/css/images/aliados/echecopar.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.estartegicAllies .ci2 {
+    background-image: url(/noticias/2.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.estartegicAllies .ci3 {
+    background-image: url(/noticias/3.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.estartegicAllies .cursos-title {
+    color: white;
+    font-size: 18px;
+    padding-right: 15%;
+    line-height: 19px;
+}
+
+.estartegicAllies .cursos-button {
+    font-size: 9px;
+    background-color: #280071;
+    color: white;
+    font-family: FABRIK;
+}
+
+.estartegicAllies .cursos-text {
+    padding-top: 5px;
+    color: #dcebec;
+    opacity: 0.8;
+    text-align: left;
+}
+
+.estartegicAllies .icon1 {
+    height: 40px;
+    width: 40px;
+    background-image: url(/FooterXX/American.png);
+    background-size: cover;
+}
+
+.estartegicAllies .icon2 {
+    height: 40px;
+    width: 40px;
+    background-image: url(/FooterXX/Dinner.png);
+    background-size: cover;
+}
+
+.estartegicAllies .icon3 {
+    height: 40px;
+    width: 40px;
+    background-image: url(/FooterXX/PayPal.png);
+    background-size: cover;
+}
+
+.estartegicAllies .icon4 {
+    height: 40px;
+    width: 40px;
+    background-image: url(/FooterXX/VISA.png);
+    background-size: cover;
+}
+
+.estartegicAllies .icon5 {
+    height: 40px;
+    width: 40px;
+    background-image: url(/FooterXX/CARTA.png);
+    background-size: cover;
+}
+
+.estartegicAllies .carr {
+    min-height: 230px;
+}
+
+@media screen and (min-width: 1024px) {
+    .estartegicAllies .carr {
+        min-height: 290px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .estartegicAllies .carr {
+        min-height: 360px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .estartegicAllies .carr {
+        min-height: 420px;
+    }
+}
