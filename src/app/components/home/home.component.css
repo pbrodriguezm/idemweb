@@ -464,13 +464,13 @@
 }
 
 .estartegicAllies .ci2 {
-    background-image: url(/noticias/2.jpg);
+    background-image: url(../../../assets/css/images/aliados/utp--blanco.png);
     background-size: cover;
     background-position: right;
 }
 
 .estartegicAllies .ci3 {
-    background-image: url(/noticias/3.jpg);
+    background-image: url(../../../assets/css/images/aliados/Iberica---blanco.png);
     background-size: cover;
     background-position: right;
 }

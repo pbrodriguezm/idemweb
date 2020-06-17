@@ -34,4 +34,12 @@ export class AppComponent {
       console.log(`Dialog result: ${result}`);
     });
   }
+
+  openMiPerfil(){
+    const dialogRef = this.dialog.open(RegisterComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }

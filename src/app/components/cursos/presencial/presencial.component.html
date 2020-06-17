@@ -16,7 +16,7 @@
                                         <p class="hero-title">{{curso.nombre}}</p>
                                         <div class="form d-flex justify-content-end pr-5" style="z-index:800;max-width:394px;">
                                             <div class="btn-wrapper px-2">
-                                                <button (click)="openRegistro()" class="btn btn-danger comprar-btn"> comprar ahora </button>
+                                                <a href="https://docs.google.com/forms/d/1w71DPkSLr05qxnhs68CVak7G-WHCItLhaATFeD0tzKE/prefill" target="_blank"> <button class="btn btn-danger comprar-btn"> comprar ahora </button></a>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-end pt-4 pr-5" style="z-index:800;max-width:394px;">
@@ -101,12 +101,14 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
 
         <!-- Program-->
 
         <div class="container-fluid programa p-6 p-md-0" style="height: 100vh; width: 100%;">
-            <ngb-carousel class="carousel-caption" style="height: 100vh;" id="carousel1" :interval="4000" v-model="slide" class="p-0 m-0" style="text-shadow: 1px 1px 2px #333;" controls img-width="1024" img-height="480">
+            <ngb-carousel class="carousel-caption" style="height: 100vh;" id="carousel1" :interval="4000" v-model="slide" class="p-0 m-0" style="text-shadow: 1px 1px 2px #333;" controls img-width="1024" img-height="480" [showNavigationArrows]="false" [showNavigationIndicators]="false">
                 <!-- Text slides with image -->
                 <ng-template ngbSlide style="height: 100vh;">
                     <div style="background-color: #270172; height: 100vh;" class="row h-100">
@@ -181,6 +183,9 @@
         </div>
 
 
+        <!-- ANOTACIONES COMPRAR AHORA CAMBIAR POR INSCRIBIRME  Y LA SECCION DE ABJO MAYOR INFORMACIÓN -->
+
+
         <!-- INSCRIPCIONES-->
 
         <div class="container-fluid inscripcion p-0" style="height:100vh; width:100%;">
@@ -188,7 +193,7 @@
                 <div class="column uno h-100 col-7 p-0">
                     <div class="screen2 h-100 b-100">
                         <div class="white-container d-flex flex-column justify-content-center py-3 px-4">
-                            <p class="hero-title d-flex px-3 pt-4">Inscripción</p>
+                            <p class="hero-title d-flex px-3 pt-4">¿Deseas mayor información?</p>
                             <div class="row px-3">
                                 <div class="column col-6 px-3">
                                     <label class="field a-field a-field_a1 page__field w-100">
