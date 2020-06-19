@@ -247,10 +247,10 @@ export class IdemCursosService {
             queryParameters = queryParameters.set('idtipocurso', <any>idtipocurso);
         }
         if (fechahoraInicio !== undefined && fechahoraInicio !== null) {
-            queryParameters = queryParameters.set('fechahora_inicio', <any>fechahoraInicio);
+            queryParameters = queryParameters.set('fechahorainicio', <any>fechahoraInicio);
         }
         if (fechahoraFin !== undefined && fechahoraFin !== null) {
-            queryParameters = queryParameters.set('fechahora_fin', <any>fechahoraFin);
+            queryParameters = queryParameters.set('fechahorafin', <any>fechahoraFin);
         }
         if (lugar !== undefined && lugar !== null) {
             queryParameters = queryParameters.set('lugar', <any>lugar);

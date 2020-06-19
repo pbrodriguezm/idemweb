@@ -45,13 +45,13 @@ export class PresencialComponent implements OnInit {
     });
   }
 
-
   cargarCurso(){
-    this.idemCursosService.idemCursosGet('eq.'+this.idcurso,null,null,null,null,null,null,null,null,null,null,null,null,'*,idem_curso_items(idtipoitem,nombre,imagen),idem_modulos(*,idem_docentes(titulo_profesional,descripcion,idem_personas(dni,nombres,apellido_pa,apellido_ma,foto)))').subscribe(data =>{
+    this.idemCursosService.idemCursosGet('eq.'+this.idcurso,null,null,null,null,null,null,null,null,null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto))), idem_curso_prese(programa,fecha, descripcion,afiche)').subscribe(data =>{
       this.curso=data[0];
+      console.log( this.curso);
       this.modulos= this.curso.idem_modulos;
-      this.cargarProfesores();
-      this.cargarPrecios();
+      
+      //this.cargarPrecios();
     })
   }
 
@@ -77,8 +77,8 @@ export class PresencialComponent implements OnInit {
     }
   }
 
-  mesdeinicio(){
-    let fecha = new Date(this.curso.fechahora_inicio );
+  mesdeinicio(fechainicio: Date){
+    let fecha = new Date(fechainicio);
     return this.mes[fecha.getMonth()];
   }
 

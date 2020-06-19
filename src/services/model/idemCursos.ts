@@ -26,8 +26,8 @@ export interface IdemCursos {
      * Note: This is a Foreign Key to `item_tipocursos.idtipocurso`.<fk table='item_tipocursos' column='idtipocurso'/>
      */
     idtipocurso?: number;
-    fechahoraInicio?: string;
-    fechahoraFin?: string;
+    fechahorainicio?: string;
+    fechahorafin?: string;
     lugar?: string;
     fecharegistro?: string;
     /**
