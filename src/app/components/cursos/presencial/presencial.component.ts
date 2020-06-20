@@ -54,27 +54,13 @@ export class PresencialComponent implements OnInit {
       //this.cargarPrecios();
     })
   }
+  docentenext;
+  getRandomDocente(idem_docentes){
 
-  cargarProfesores(){
-
-      for (const idem_docentes of this.modulos) {
-        this.profesores.push(idem_docentes.idem_docentes);
-        console.log(idem_docentes);
-      }
+    let numrandom=Math.floor(this.getRandomArbitrary(0,this.curso.idem_curso_docentes.length));
     
-  }
-
-  cargarPrecios(){
-    for (let index = 0; index < this.curso.idem_curso_items.length || index<3; index++) {
-      if(this.curso.idem_curso_items[index].idtipoitem=='P'){
-        this.precios.push(this.curso.idem_curso_items[index]);
-      }else{
-        this.items.push(this.curso.idem_curso_items[index]);
-        
-      }
-      
-      
-    }
+    this.docentenext=this.curso.idem_curso_docentes[numrandom].idem_docentes;;
+      return this.curso.idem_curso_docentes[numrandom].idem_docentes;
   }
 
   mesdeinicio(fechainicio: Date){
@@ -82,6 +68,10 @@ export class PresencialComponent implements OnInit {
     return this.mes[fecha.getMonth()];
   }
 
+
+  getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
 
 
   openRegistro() {
