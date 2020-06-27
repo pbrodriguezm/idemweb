@@ -71,7 +71,7 @@
                                     <div class="icon_1"></div>
                                 </div>
                                 <div class="contenido py-2">
-                                    <p class="normal-text m-0"> Aula Magna de la univesidad San augustin</p>
+                                    <p class="normal-text m-0"> {{curso.lugar}}</p>
                                 </div>
                             </div>
                             <div class="container-blue py-4  px-4 d-flex flex-column justify-content-center">
@@ -79,8 +79,8 @@
                                     <div class="icon_2"></div>
                                 </div>
                                 <div class="contenido py-2">
-                                    <p class="normal-text m-0">28 set 6:00pm-9:30pm</p>
-                                    <p class="normal-text m-0"> 29 set 4:00pm-8:00pm</p>
+                                    <p class="normal-text m-0">{{curso.fechahorainicio | date: 'mediumDate'}}</p>
+                                    <p class="normal-text m-0"> {{curso.fechahorafin | date: 'mediumDate'}}</p>
                                 </div>
                             </div>
                             <div class="container-blue p-4 d-flex flex-column justify-content-center">
@@ -88,9 +88,9 @@
                                     <div class="icon_3"></div>
                                 </div>
                                 <div class="contenido py-2">
-                                    <p class="normal-text m-0"> Estudiante S/50.00</p>
-                                    <p class="normal-text m-0"> Profecional S/60.00</p>
-                                    <p class="normal-text m-0"> Corporativo S/200.00</p>
+                                    <p class="normal-text m-0"> Estudiante S/{{curso.costo}}</p>
+                                    <p class="normal-text m-0"> Profecional S/-</p>
+                                    <p class="normal-text m-0"> Corporativo S/-</p>
                                 </div>
                             </div>
                         </div>
