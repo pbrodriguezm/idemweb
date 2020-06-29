@@ -6,8 +6,11 @@ import { ActivatedRoute } from '@angular/router';
 
 import { IdemCursosService } from '../../../../services/api/idemCursos.service';
 import { IdemRelCursosModulosService } from '../../../../services/api/idemRelCursosModulos.service';
+import { IdemCursoInformesService } from '../../../../services/api/idemCursoInformes.service'
 
 import { IdemCursos } from '../../../../services/model/idemCursos';
+
+import { IdemCursoInformes } from '../../../../services/model/idemCursoInformes';
 
 import {MatDialog} from '@angular/material/dialog';
 
@@ -22,6 +25,8 @@ import { RegisterComponent } from '../../register/register.component';
 export class PresencialComponent implements OnInit {
     
   constructor(private route: ActivatedRoute,
+    protected idemCursoInformesService:IdemCursoInformesService,
+    
     protected ademRelCursosModulosService:IdemRelCursosModulosService,
     public dialog: MatDialog,
     protected idemCursosService:IdemCursosService) { }
@@ -34,10 +39,11 @@ export class PresencialComponent implements OnInit {
   modulos:any;
   mes:any[]=['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
   'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-
+  
   precios:any=[];
   items:any=[];
-
+  informes:IdemCursoInformes={};
+  
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.idcurso= params.get('cursoId');
@@ -46,9 +52,11 @@ export class PresencialComponent implements OnInit {
   }
 
   cargarCurso(){
-    this.idemCursosService.idemCursosGet('eq.'+this.idcurso,null,null,null,null,null,null,null,null,null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto))), idem_curso_prese(programa,fecha, descripcion,afiche)').subscribe(data =>{
+    this.idemCursosService.idemCursosGet('eq.'+this.idcurso,null,null,null,null,null,null,null,null,null,null,null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto))), idem_curso_prese(programa,fecha, descripcion,afiche)').subscribe(data =>{
       this.curso=data[0];
-      console.log( this.curso);
+      console.log(this.curso);
+      this.precios=this.curso.costodescripcion.split(',');
+      
       this.modulos= this.curso.idem_modulos;
       
       //this.cargarPrecios();
@@ -83,7 +91,25 @@ export class PresencialComponent implements OnInit {
   }
   
 
+  guardarInformes() {
+    this.informes.idcurso=this.idcurso;
+    this.idemCursoInformesService.idemCursoInformesPost(this.informes).subscribe(data => {
+      alert('Muy pronto nos estaremos comunicando con usted.')
+    })
+
+  }
+
 /*** ESTRUCTURA
+ * 
+ * 
+ * FALTA CAMBIAR PARA HOY 27:
+ * 1.- cambiar boton inscribirse es blanco = LISTO
+ * 2.- agregar hora en administardor para inicio y fin =PNDTE
+ * 3.- isncribirse cambiar diseño  =
+ * 4.- descargar programa al costado de isncribirme
+ * 5.- link isncribirme
+ * 6.- cambiar el "Deseas mayor información diseño"
+ * 
    *  {
         "idcurso": 10,
         "nombre": "Curso de derecho Concursal",

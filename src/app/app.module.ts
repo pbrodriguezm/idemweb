@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';  //<<<< import it here
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,6 +46,7 @@ import { IdemUsuariosService } from '../services/api/idemUsuarios.service';
 import { IntrospectionService } from '../services/api/introspection.service';
 import { ItemTipocursosService } from '../services/api/itemTipocursos.service';
 import { RegisterComponent } from './components/register/register.component';
+import { IdemCursoInformesService } from 'src/services/api/idemCursoInformes.service';
 
 
 let config = new AuthServiceConfig([
@@ -79,7 +81,8 @@ export function provideConfig() {
     MatToolbarModule,
     MatButtonModule,
     MatTooltipModule,
-    SocialLoginModule
+    SocialLoginModule,
+    FormsModule
 
   ],
   providers: [ IdemAlumnosService,
@@ -99,6 +102,7 @@ export function provideConfig() {
     IdemUsuariosService,
     IntrospectionService,
     ItemTipocursosService,
+    IdemCursoInformesService,
     {
       provide: AuthServiceConfig,
       useFactory: provideConfig

@@ -18,14 +18,14 @@ import { CustomHttpUrlEncodingCodec }                        from '../encoder';
 
 import { Observable }                                        from 'rxjs/Observable';
 
-import { IdemCursoPrese } from '../model/idemCursoPrese';
+import { IdemCursoInformes } from '../model/idemCursoInformes';
 
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
 import { Configuration }                                     from '../configuration';
 
 
 @Injectable()
-export class IdemCursoPreseService {
+export class IdemCursoInformesService {
 
     protected basePath = 'http://168.138.150.197:3000';
     public defaultHeaders = new HttpHeaders();
@@ -59,20 +59,20 @@ export class IdemCursoPreseService {
     /**
      * 
      * 
-     * @param idcursopre 
+     * @param idinformes 
      * @param idcurso 
-     * @param programa 
-     * @param fecha 
-     * @param descripcion 
-     * @param afiche 
+     * @param nombre 
+     * @param apellidos 
+     * @param celular 
+     * @param correo 
      * @param prefer Preference
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public idemCursoPreseDelete(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
-    public idemCursoPreseDelete(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
-    public idemCursoPreseDelete(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
-    public idemCursoPreseDelete(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+    public idemCursoInformesDelete(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
+    public idemCursoInformesDelete(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
+    public idemCursoInformesDelete(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
+    public idemCursoInformesDelete(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
 
 
 
@@ -82,23 +82,23 @@ export class IdemCursoPreseService {
 
 
         let queryParameters = new HttpParams({encoder: new CustomHttpUrlEncodingCodec()});
-        if (idcursopre !== undefined && idcursopre !== null) {
-            queryParameters = queryParameters.set('idcursopre', <any>idcursopre);
+        if (idinformes !== undefined && idinformes !== null) {
+            queryParameters = queryParameters.set('idinformes', <any>idinformes);
         }
         if (idcurso !== undefined && idcurso !== null) {
             queryParameters = queryParameters.set('idcurso', <any>idcurso);
         }
-        if (programa !== undefined && programa !== null) {
-            queryParameters = queryParameters.set('programa', <any>programa);
+        if (nombre !== undefined && nombre !== null) {
+            queryParameters = queryParameters.set('nombre', <any>nombre);
         }
-        if (fecha !== undefined && fecha !== null) {
-            queryParameters = queryParameters.set('fecha', <any>fecha);
+        if (apellidos !== undefined && apellidos !== null) {
+            queryParameters = queryParameters.set('apellidos', <any>apellidos);
         }
-        if (descripcion !== undefined && descripcion !== null) {
-            queryParameters = queryParameters.set('descripcion', <any>descripcion);
+        if (celular !== undefined && celular !== null) {
+            queryParameters = queryParameters.set('celular', <any>celular);
         }
-        if (afiche !== undefined && afiche !== null) {
-            queryParameters = queryParameters.set('afiche', <any>afiche);
+        if (correo !== undefined && correo !== null) {
+            queryParameters = queryParameters.set('correo', <any>correo);
         }
 
         let headers = this.defaultHeaders;
@@ -124,7 +124,7 @@ export class IdemCursoPreseService {
             'text/csv'
         ];
 
-        return this.httpClient.delete<any>(`${this.basePath}/idem_curso_prese`,
+        return this.httpClient.delete<any>(`${this.basePath}/idem_curso_informes`,
             {
                 params: queryParameters,
                 withCredentials: this.configuration.withCredentials,
@@ -138,12 +138,12 @@ export class IdemCursoPreseService {
     /**
      * 
      * 
-     * @param idcursopre 
+     * @param idinformes 
      * @param idcurso 
-     * @param programa 
-     * @param fecha 
-     * @param descripcion 
-     * @param afiche 
+     * @param nombre 
+     * @param apellidos 
+     * @param celular 
+     * @param correo 
      * @param select Filtering Columns
      * @param order Ordering
      * @param range Limiting and Pagination
@@ -154,10 +154,10 @@ export class IdemCursoPreseService {
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public idemCursoPreseGet(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'body', reportProgress?: boolean): Observable<Array<IdemCursoPrese>>;
-    public idemCursoPreseGet(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<Array<IdemCursoPrese>>>;
-    public idemCursoPreseGet(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<Array<IdemCursoPrese>>>;
-    public idemCursoPreseGet(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+    public idemCursoInformesGet(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'body', reportProgress?: boolean): Observable<Array<IdemCursoInformes>>;
+    public idemCursoInformesGet(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<Array<IdemCursoInformes>>>;
+    public idemCursoInformesGet(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<Array<IdemCursoInformes>>>;
+    public idemCursoInformesGet(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
 
 
 
@@ -173,23 +173,23 @@ export class IdemCursoPreseService {
 
 
         let queryParameters = new HttpParams({encoder: new CustomHttpUrlEncodingCodec()});
-        if (idcursopre !== undefined && idcursopre !== null) {
-            queryParameters = queryParameters.set('idcursopre', <any>idcursopre);
+        if (idinformes !== undefined && idinformes !== null) {
+            queryParameters = queryParameters.set('idinformes', <any>idinformes);
         }
         if (idcurso !== undefined && idcurso !== null) {
             queryParameters = queryParameters.set('idcurso', <any>idcurso);
         }
-        if (programa !== undefined && programa !== null) {
-            queryParameters = queryParameters.set('programa', <any>programa);
+        if (nombre !== undefined && nombre !== null) {
+            queryParameters = queryParameters.set('nombre', <any>nombre);
         }
-        if (fecha !== undefined && fecha !== null) {
-            queryParameters = queryParameters.set('fecha', <any>fecha);
+        if (apellidos !== undefined && apellidos !== null) {
+            queryParameters = queryParameters.set('apellidos', <any>apellidos);
         }
-        if (descripcion !== undefined && descripcion !== null) {
-            queryParameters = queryParameters.set('descripcion', <any>descripcion);
+        if (celular !== undefined && celular !== null) {
+            queryParameters = queryParameters.set('celular', <any>celular);
         }
-        if (afiche !== undefined && afiche !== null) {
-            queryParameters = queryParameters.set('afiche', <any>afiche);
+        if (correo !== undefined && correo !== null) {
+            queryParameters = queryParameters.set('correo', <any>correo);
         }
         if (select !== undefined && select !== null) {
             queryParameters = queryParameters.set('select', <any>select);
@@ -233,7 +233,7 @@ export class IdemCursoPreseService {
             'text/csv'
         ];
 
-        return this.httpClient.get<Array<IdemCursoPrese>>(`${this.basePath}/idem_curso_prese`,
+        return this.httpClient.get<Array<IdemCursoInformes>>(`${this.basePath}/idem_curso_informes`,
             {
                 params: queryParameters,
                 withCredentials: this.configuration.withCredentials,
@@ -247,21 +247,21 @@ export class IdemCursoPreseService {
     /**
      * 
      * 
-     * @param idcursopre 
+     * @param idinformes 
      * @param idcurso 
-     * @param programa 
-     * @param fecha 
-     * @param descripcion 
-     * @param afiche 
-     * @param idemCursoPrese idem_curso_prese
+     * @param nombre 
+     * @param apellidos 
+     * @param celular 
+     * @param correo 
+     * @param idemCursoInformes idem_curso_informes
      * @param prefer Preference
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public idemCursoPresePatch(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, idemCursoPrese?: IdemCursoPrese, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
-    public idemCursoPresePatch(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, idemCursoPrese?: IdemCursoPrese, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
-    public idemCursoPresePatch(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, idemCursoPrese?: IdemCursoPrese, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
-    public idemCursoPresePatch(idcursopre?: string, idcurso?: string, programa?: string, fecha?: string, descripcion?: string, afiche?: string, idemCursoPrese?: IdemCursoPrese, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+    public idemCursoInformesPatch(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, idemCursoInformes?: IdemCursoInformes, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
+    public idemCursoInformesPatch(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, idemCursoInformes?: IdemCursoInformes, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
+    public idemCursoInformesPatch(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, idemCursoInformes?: IdemCursoInformes, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
+    public idemCursoInformesPatch(idinformes?: string, idcurso?: string, nombre?: string, apellidos?: string, celular?: string, correo?: string, idemCursoInformes?: IdemCursoInformes, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
 
 
 
@@ -272,23 +272,23 @@ export class IdemCursoPreseService {
 
 
         let queryParameters = new HttpParams({encoder: new CustomHttpUrlEncodingCodec()});
-        if (idcursopre !== undefined && idcursopre !== null) {
-            queryParameters = queryParameters.set('idcursopre', <any>idcursopre);
+        if (idinformes !== undefined && idinformes !== null) {
+            queryParameters = queryParameters.set('idinformes', <any>idinformes);
         }
         if (idcurso !== undefined && idcurso !== null) {
             queryParameters = queryParameters.set('idcurso', <any>idcurso);
         }
-        if (programa !== undefined && programa !== null) {
-            queryParameters = queryParameters.set('programa', <any>programa);
+        if (nombre !== undefined && nombre !== null) {
+            queryParameters = queryParameters.set('nombre', <any>nombre);
         }
-        if (fecha !== undefined && fecha !== null) {
-            queryParameters = queryParameters.set('fecha', <any>fecha);
+        if (apellidos !== undefined && apellidos !== null) {
+            queryParameters = queryParameters.set('apellidos', <any>apellidos);
         }
-        if (descripcion !== undefined && descripcion !== null) {
-            queryParameters = queryParameters.set('descripcion', <any>descripcion);
+        if (celular !== undefined && celular !== null) {
+            queryParameters = queryParameters.set('celular', <any>celular);
         }
-        if (afiche !== undefined && afiche !== null) {
-            queryParameters = queryParameters.set('afiche', <any>afiche);
+        if (correo !== undefined && correo !== null) {
+            queryParameters = queryParameters.set('correo', <any>correo);
         }
 
         let headers = this.defaultHeaders;
@@ -318,8 +318,8 @@ export class IdemCursoPreseService {
             headers = headers.set('Content-Type', httpContentTypeSelected);
         }
 
-        return this.httpClient.patch<any>(`${this.basePath}/idem_curso_prese`,
-            idemCursoPrese,
+        return this.httpClient.patch<any>(`${this.basePath}/idem_curso_informes`,
+            idemCursoInformes,
             {
                 params: queryParameters,
                 withCredentials: this.configuration.withCredentials,
@@ -333,16 +333,16 @@ export class IdemCursoPreseService {
     /**
      * 
      * 
-     * @param idemCursoPrese idem_curso_prese
+     * @param idemCursoInformes idem_curso_informes
      * @param select Filtering Columns
      * @param prefer Preference
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public idemCursoPresePost(idemCursoPrese?: IdemCursoPrese, select?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
-    public idemCursoPresePost(idemCursoPrese?: IdemCursoPrese, select?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
-    public idemCursoPresePost(idemCursoPrese?: IdemCursoPrese, select?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
-    public idemCursoPresePost(idemCursoPrese?: IdemCursoPrese, select?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+    public idemCursoInformesPost(idemCursoInformes?: IdemCursoInformes, select?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
+    public idemCursoInformesPost(idemCursoInformes?: IdemCursoInformes, select?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
+    public idemCursoInformesPost(idemCursoInformes?: IdemCursoInformes, select?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
+    public idemCursoInformesPost(idemCursoInformes?: IdemCursoInformes, select?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
 
 
 
@@ -379,8 +379,8 @@ export class IdemCursoPreseService {
             headers = headers.set('Content-Type', httpContentTypeSelected);
         }
 
-        return this.httpClient.post<any>(`${this.basePath}/idem_curso_prese`,
-            idemCursoPrese,
+        return this.httpClient.post<any>(`${this.basePath}/idem_curso_informes`,
+            idemCursoInformes,
             {
                 params: queryParameters,
                 withCredentials: this.configuration.withCredentials,

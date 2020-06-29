@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit  {
   }
   cargarCursos(){
 
-    this.idemCursosService.idemCursosGet(null,null,null,null,null,null,null,null,'gte.'+this.fechahoy.getFullYear()+'-'+this.fechahoy.getMonth()+'-'+this.fechahoy.getDate(),null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto)))').subscribe(data=>{
+    this.idemCursosService.idemCursosGet(null,null,null,null,null,null,null,null,'gte.'+this.fechahoy.getFullYear()+'-'+this.fechahoy.getMonth()+'-'+this.fechahoy.getDate(),null,null,null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto)))').subscribe(data=>{
       this.idemcursoList=data;
       console.log(data);
       this.filterCurso();

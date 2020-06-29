@@ -16,7 +16,14 @@
                                         <p class="hero-title">{{curso.nombre}}</p>
                                         <div class="form d-flex justify-content-end pr-5" style="z-index:800;max-width:394px;">
                                             <div class="btn-wrapper px-2">
-                                                <a href="https://docs.google.com/forms/d/1w71DPkSLr05qxnhs68CVak7G-WHCItLhaATFeD0tzKE/prefill" target="_blank"> <button class="btn btn-danger comprar-btn"> Inscribirme </button></a>
+                                                <a [href]="curso.imagen" target="_blank">
+                                                    <button class="btn btn-outline-danger py-0 agregar-inscribirme " style="height: 35px; margin-right: 5px; min-width:100px;">Programa</button>
+                                                </a>
+
+                                                <a [href]="curso.urlexternocurso" target="_blank">
+                                                    <button class="btn btn-outline-danger py-0 agregar-inscribirme " style="height: 35px;"> Inscribirme </button></a>
+
+
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-end pt-4 pr-5" style="z-index:800;max-width:394px;">
@@ -59,7 +66,7 @@
                                         <div class="section-title">Información</div>
                                     </div>
                                 </div>
-                                <div class="normal-text" style="text-align: justify; padding-left: 28px;">
+                                <div class="normal-text" style="font-family: FABRIK; padding-left: 28px;">
                                     {{curso.descripcion}}
                                 </div>
 
@@ -88,9 +95,8 @@
                                     <div class="icon_3"></div>
                                 </div>
                                 <div class="contenido py-2">
-                                    <p class="normal-text m-0"> Estudiante S/{{curso.costo}}</p>
-                                    <p class="normal-text m-0"> Profecional S/-</p>
-                                    <p class="normal-text m-0"> Corporativo S/-</p>
+                                    <p *ngFor="let precio of precios" class="normal-text m-0">{{precio}}</p>
+
                                 </div>
                             </div>
                         </div>
@@ -284,17 +290,17 @@
                             <div class="row px-3">
                                 <div class="column col-6 px-3">
                                     <label class="field a-field a-field_a1 page__field w-100">
-                                        <input class="field__input a-field__input" placeholder="e.g. Stanislav" required>
+                                        <input [(ngModel)]="informes.nombre" class="field__input a-field__input" placeholder="   " required>
                                         <span class="a-field__label-wrap">
-                                            <span class=" a-field__label normal-text">Nombre</span>
+                                            <span style="font-size: 13px;" class=" a-field__label normal-text">Nombre</span>
                                         </span>
                                     </label>
                                 </div>
                                 <div class="column col-6 px-3">
                                     <label class="field a-field a-field_a1 page__field  w-100">
-                                        <input class="field__input a-field__input" placeholder="e.g. Stanislav" required>
+                                        <input  [(ngModel)]="informes.apellidos" class="field__input a-field__input" placeholder="  " required>
                                         <span class="a-field__label-wrap">
-                                            <span class="normal-text a-field__label">Apellido</span>
+                                            <span style="font-size: 13px;"  class="normal-text a-field__label">Apellido</span>
                                         </span>
                                     </label>
                                 </div>
@@ -302,40 +308,25 @@
                             <div class="row px-3">
                                 <div class="column col-6 px-3">
                                     <label class="field a-field a-field_a1 page__field w-100">
-                                        <input class="field__input a-field__input" placeholder="e.g. Stanislav" required>
+                                        <input  [(ngModel)]="informes.celular" class="field__input a-field__input" placeholder="  " required>
                                         <span class="a-field__label-wrap">
-                                            <span class="normal-text a-field__label">Celular</span>
+                                            <span style="font-size: 13px;"  class="normal-text a-field__label">Celular</span>
                                         </span>
                                     </label>
                                 </div>
                                 <div class="column col-6 px-3">
                                     <label class="field a-field a-field_a1 page__field  w-100">
-                                        <input class="field__input a-field__input" placeholder="e.g. Stanislav" required>
+                                        <input [(ngModel)]="informes.correo" class="field__input a-field__input" placeholder="  " required>
                                         <span class="a-field__label-wrap">
-                                            <span class="normal-text a-field__label">E-mail</span>
+                                            <span style="font-size: 13px;"  class="normal-text a-field__label">E-mail</span>
                                         </span>
                                     </label>
                                 </div>
                             </div>
-                            <div class="row px-3">
 
-
-                                <div class="column col-6 px-3">
-                                    <div class="card">
-                                        <label class="checkbox-label d-flex">
-                                            <input type="checkbox">
-                                            <span class="checkbox-custom rectangular"></span>
-                                        </label>
-                                        <div class="input-title">
-                                            <div class="small-text" style="    margin-left: 40px;
-                                            margin-top: 15px;">Términos y condiciones</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="row">
                                 <div class="btn-wrapper d-flex justify-content-center w-100 py-4">
-                                    <button class="btn btn-outline-danger agregar-btn py-0" style="min-width:100px;">Enviar</button>
+                                    <button (click)="guardarInformes()" class="btn btn-outline-danger agregar-inscribirme  py-0" style="min-width:100px;">Enviar</button>
                                 </div>
                             </div>
                         </div>
