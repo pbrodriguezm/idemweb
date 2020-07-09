@@ -36,4 +36,5 @@ export interface IdemCursos {
     idcategoria?: number;
     urlexternocurso?: string;
     costodescripcion?: string;
+    idcursotexto?: string;
 }

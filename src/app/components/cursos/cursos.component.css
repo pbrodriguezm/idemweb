@@ -691,3 +691,55 @@
 .docentes .carousel-control-next {
     background-image: url(../../../assets/css/images/r1.png);
 }
+
+.card-container {
+    -webkit-perspective: 500px;
+    perspective: 500px;
+}
+
+.card-container:hover .card {
+    -webkit-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);
+}
+
+.card {
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    -webkit-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);
+}
+
+.back {
+    box-shadow: 0 1px 6px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: #f9423a;
+    display: block;
+    margin-left: 15px;
+}
+
+.moduleNumber {
+    font-family: TIEMPO;
+    margin-top: 20%;
+    margin-left: 15px;
+    color: #280071;
+}
+
+.text-white {
+    color: white;
+    font-size: 10px;
+    margin-left: 15px;
+}

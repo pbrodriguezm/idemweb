@@ -122,7 +122,7 @@
                                         <div class="card-text w-50 d-flex flex-column justify-content-center">
                                             <div class="section-title">Nuestros Docentes</div>
                                             <p class="normal-text">
-                                                m is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                Estos son algunos de nuestros docentes, profesionales reconocidos y capacitados...
                                             </p>
                                         </div>
                                     </div>
@@ -160,44 +160,45 @@
                 <div class="dualDocentWrapper px-0 w-75  m-0 py-2 d-flex">
                     <div class="card-wrapper d-flex col-6 px-1 pr-2  py-0 d-flex">
                         <div class="carD">
-                            <div class="ci2 w-50 h-100"></div>
-                            <div class="card-text w-50 h-100"><span class="cursos-title text-left ">Lourdes Flores Nano</span> <span class="small-text subtitle">Abogada y política peruana</span>
+                            <div class="ci2 w-50 h-100" [ngStyle]="{ 'background-image': 'url(' + docenteList[0].idem_personas.foto + ')'}"></div>
+                            <div class="card-text w-50 h-100"><span class="cursos-title text-left ">{{docenteList[0].idem_personas.nombres}} {{docenteList[0].idem_personas.apellido_pa}}  {{docenteList[0].idem_personas.apellido_ma}} </span> <span class="small-text subtitle">{{docenteList[0].titulo_profesional}}</span>
                                 <p class="small-text">
-                                    m is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    {{docenteList[0].descripcion}}
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="card-wrapper d-flex col-6 px-1 pl-2 py-0">
                         <div class="carD d-flex justify-content-start pt-0 text-center">
-                            <div class="ci3 w-50 h-100"></div>
-                            <div class="card-text w-50 h-100"><span class="cursos-title text-left">Esteban Chong</span> <span class="small-text subtitle">Contador y Exsocio Principal de Pwc Perú </span>
+                            <div class="ci3 w-50 h-100" [ngStyle]="{ 'background-image': 'url(' + docenteList[1].idem_personas.foto + ')'}"></div>
+                            <div class="card-text w-50 h-100"><span class="cursos-title text-left">{{docenteList[1].idem_personas.nombres}} {{docenteList[1].idem_personas.apellido_pa}}  {{docenteList[1].idem_personas.apellido_ma}} </span> <span class="small-text subtitle">{{docenteList[1].titulo_profesional}}</span>
                                 <p class="small-text">
-                                    m is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    {{docenteList[1].descripcion}}
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class=" dualDocentWrapper px-0 w-75 p-0 m-0 m-0 py-2 d-flex">
                     <div class="card-wrapper d-flex col-6 px-1 pr-2 py-0">
                         <div class="carD d-flex justify-content-start pt-0 text-center">
-                            <div class="card-text w-50 h-100"><span class="cursos-title text-left">María Tereza Quiñonez</span> <span class="small-text subtitle">Abogada y socia del estudio Rodrigo,Elias &amp; Medrano Abogados</span>
+                            <div class="card-text w-50 h-100"><span class="cursos-title text-left">{{docenteList[2].idem_personas.nombres}} {{docenteList[2].idem_personas.apellido_pa}}  {{docenteList[2].idem_personas.apellido_ma}}</span> <span class="small-text subtitle">{{docenteList[2].titulo_profesional}}</span>
                                 <p class="small-text">
-                                    m is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    {{docenteList[2].descripcion}}
                                 </p>
                             </div>
-                            <div class="ci4 w-50 h-100"></div>
+                            <div class="ci4 w-50 h-100" [ngStyle]="{ 'background-image': 'url(' + docenteList[2].idem_personas.foto + ')'}"></div>
                         </div>
                     </div>
                     <div class="card-wrapper d-flex col-6 px-1 pl-2 py-0">
                         <div class=" carD d-flex justify-content-start pt-0 text-center">
-                            <div class="card-text w-50 h-100"><span class="cursos-title text-left">Samuel Abad</span> <span class="small-text subtitle">Abogado y Socio del estudio Echecopar</span>
+                            <div class="card-text w-50 h-100"><span class="cursos-title text-left">{{docenteList[3].idem_personas.nombres}} {{docenteList[3].idem_personas.apellido_pa}}  {{docenteList[3].idem_personas.apellido_ma}}</span> <span class="small-text subtitle">{{docenteList[2].titulo_profesional}}</span>
                                 <p class="small-text">
-                                    m is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scra
+                                    {{docenteList[3].descripcion}}
                                 </p>
                             </div>
-                            <div class="ci5 w-50 h-100"></div>
+                            <div class="ci5 w-50 h-100" [ngStyle]="{ 'background-image': 'url(' + docenteList[3].idem_personas.foto + ')'}"></div>
                         </div>
                     </div>
                 </div>
@@ -256,10 +257,14 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
                 <div class="column uno h-100 col-9 p-0" style="padding-right: 250px;">
                     <div class="container p-5 screen1 d-flex flex-column h-100 p-0 d-flex justify-content-end">
                         <div class="w-100 h-100 d-flex justify-content-center px-5 ml-5">
-                            <div id="style-2" class="overflow d-flex flex-column justify-content-end h-100 px-0">
+                            <div id="style-2" style="overflow-x: auto" class="overflow d-flex flex-column justify-content-end h-100 px-0">
                                 <div class=" h-75" style="display: flex;">
                                     <div class="card d-flex justify-content-center w-100 flex-row" style="background-color: rgb(220, 235, 236); border: rgb(220, 235, 236); min-width: 50%; height: 100%;">
                                         <div class="arrow"></div>
@@ -306,11 +311,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="indicator-container d-flex w-100 px-5 py-3 justify-content-center"><label class="switch" style="max-width: 625px;"><input type="checkbox"> <span class="slider round"></span></label></div>
+
                     </div>
                 </div>
+
+
+
+
+
+
             </div>
         </div>
+
+
+
+
         <div class="container-fluid online_testimonials p-0">
             <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
             <div role="region" id="carousel1" aria-busy="false" class="carousel p-0 m-0 slide" style="text-shadow: rgb(51, 51, 51) 1px 1px 2px;">
@@ -379,3 +394,33 @@
     <!---->
     <!---->
 </div>
+
+<script>
+    export default {
+        data() {
+            return {
+                slide: 0,
+                sliding: null,
+                switch1: true
+            }
+        },
+        methods: {
+            changeStatus: function($event, num) {
+                this.switch1 = !this.switch1
+                let content = document.querySelector('#style-2');
+                var width = content.offsetWidth;
+                if (this.switch1) {
+                    content.scrollLeft = 0;
+                } else {
+                    content.scrollLeft += width;
+                }
+            },
+            onSlideStart(slide) {
+                this.sliding = true
+            },
+            onSlideEnd(slide) {
+                this.sliding = false
+            }
+        }
+    }
+</script>

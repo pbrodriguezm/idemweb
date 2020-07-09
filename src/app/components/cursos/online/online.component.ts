@@ -5,6 +5,7 @@ import { IdemCursosService } from '../../../../services/api/idemCursos.service';
 import { IdemCursos } from '../../../../services/model/idemCursos';
 import { RegisterComponent } from '../../register/register.component';
 import {MatDialog} from '@angular/material/dialog';
+import { IdemDocentesService } from 'src/services/api/api';
 
 @Component({
   selector: 'app-online',
@@ -13,11 +14,24 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class OnlineComponent implements OnInit {
   idemcursoList:IdemCursos[]=[];
+  docenteList:any[]=[];
 
-  constructor(protected idemCursosService:IdemCursosService, config: NgbCarouselConfig, public dialog: MatDialog) { }
+  constructor(protected idemCursosService:IdemCursosService, 
+    config: NgbCarouselConfig,
+    protected idemDocentesService:IdemDocentesService,
+    public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.cargarDocentes();
     this.cargarCursos();
+
+  }
+
+  cargarDocentes(){
+    this.idemDocentesService.idemDocentesGet(null,null,null,null,'eq.1',null,'*, idem_personas(*)').subscribe(data => {
+    this.docenteList=data;
+    })
+    
   }
 
   cargarCursos(){
@@ -28,7 +42,7 @@ export class OnlineComponent implements OnInit {
 
   index=0; 
   getCursos(cantidad){
-    console.log('no entra');
+    
     let arrayselect;
     if(cantidad > this.idemcursoList.length){
       cantidad=this.idemcursoList.length;

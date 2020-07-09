@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit  {
 
   idemcursoList:any[];
   idemcursoListPresencial: any[] = [];
+  idemcursoListVirtual: any[] = [];
   fechahoy:Date = new Date(Date.now());
   anuncioFecha='Proximamente';
 
@@ -57,7 +58,7 @@ export class HomeComponent implements OnInit  {
   }
   cargarCursos(){
 
-    this.idemCursosService.idemCursosGet(null,null,null,null,null,null,null,null,'gte.'+this.fechahoy.getFullYear()+'-'+this.fechahoy.getMonth()+'-'+this.fechahoy.getDate(),null,null,null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto)))').subscribe(data=>{
+    this.idemCursosService.idemCursosGet(null,null,null,null,null,null,null,null,'gte.'+this.fechahoy.getFullYear()+'-'+this.fechahoy.getMonth()+'-'+this.fechahoy.getDate(),null,null,null,null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto)))').subscribe(data=>{
       this.idemcursoList=data;
       console.log(data);
       this.filterCurso();
@@ -71,6 +72,9 @@ export class HomeComponent implements OnInit  {
     for (const item of this.idemcursoList) {
       if(item.idtipocurso==1){
         this.idemcursoListPresencial.push(item)
+      }
+      if(item.idtipocurso==2){
+        this.idemcursoListVirtual.push(item)
       }
     }
   }

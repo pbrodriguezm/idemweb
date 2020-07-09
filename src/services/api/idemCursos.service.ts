@@ -74,14 +74,16 @@ export class IdemCursosService {
      * @param idcategoria 
      * @param urlexternocurso 
      * @param costodescripcion 
+     * @param idcursotexto 
      * @param prefer Preference
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public idemCursosDelete(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
-    public idemCursosDelete(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
-    public idemCursosDelete(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
-    public idemCursosDelete(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+    public idemCursosDelete(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
+    public idemCursosDelete(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
+    public idemCursosDelete(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
+    public idemCursosDelete(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+
 
 
 
@@ -144,6 +146,9 @@ export class IdemCursosService {
         }
         if (costodescripcion !== undefined && costodescripcion !== null) {
             queryParameters = queryParameters.set('costodescripcion', <any>costodescripcion);
+        }
+        if (idcursotexto !== undefined && idcursotexto !== null) {
+            queryParameters = queryParameters.set('idcursotexto', <any>idcursotexto);
         }
 
         let headers = this.defaultHeaders;
@@ -198,6 +203,7 @@ export class IdemCursosService {
      * @param idcategoria 
      * @param urlexternocurso 
      * @param costodescripcion 
+     * @param idcursotexto 
      * @param select Filtering Columns
      * @param order Ordering
      * @param range Limiting and Pagination
@@ -208,10 +214,11 @@ export class IdemCursosService {
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public idemCursosGet(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'body', reportProgress?: boolean): Observable<Array<IdemCursos>>;
-    public idemCursosGet(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<Array<IdemCursos>>>;
-    public idemCursosGet(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<Array<IdemCursos>>>;
-    public idemCursosGet(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+    public idemCursosGet(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'body', reportProgress?: boolean): Observable<Array<IdemCursos>>;
+    public idemCursosGet(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<Array<IdemCursos>>>;
+    public idemCursosGet(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<Array<IdemCursos>>>;
+    public idemCursosGet(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, select?: string, order?: string, range?: string, rangeUnit?: string, offset?: string, limit?: string, prefer?: 'count=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+
 
 
 
@@ -280,6 +287,9 @@ export class IdemCursosService {
         }
         if (costodescripcion !== undefined && costodescripcion !== null) {
             queryParameters = queryParameters.set('costodescripcion', <any>costodescripcion);
+        }
+        if (idcursotexto !== undefined && idcursotexto !== null) {
+            queryParameters = queryParameters.set('idcursotexto', <any>idcursotexto);
         }
         if (select !== undefined && select !== null) {
             queryParameters = queryParameters.set('select', <any>select);
@@ -352,15 +362,17 @@ export class IdemCursosService {
      * @param idcategoria 
      * @param urlexternocurso 
      * @param costodescripcion 
+     * @param idcursotexto 
      * @param idemCursos idem_cursos
      * @param prefer Preference
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public idemCursosPatch(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idemCursos?: IdemCursos, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
-    public idemCursosPatch(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idemCursos?: IdemCursos, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
-    public idemCursosPatch(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idemCursos?: IdemCursos, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
-    public idemCursosPatch(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idemCursos?: IdemCursos, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+    public idemCursosPatch(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, idemCursos?: IdemCursos, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'body', reportProgress?: boolean): Observable<any>;
+    public idemCursosPatch(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, idemCursos?: IdemCursos, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
+    public idemCursosPatch(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, idemCursos?: IdemCursos, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
+    public idemCursosPatch(idcurso?: string, nombre?: string, descripcion?: string, descripcion2?: string, imagen?: string, costo?: string, moneda?: string, idtipocurso?: string, fechahorainicio?: string, fechahorafin?: string, lugar?: string, fecharegistro?: string, idcategoria?: string, urlexternocurso?: string, costodescripcion?: string, idcursotexto?: string, idemCursos?: IdemCursos, prefer?: 'return=representation' | 'return=minimal' | 'return=none', observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
+
 
 
 
@@ -424,6 +436,9 @@ export class IdemCursosService {
         }
         if (costodescripcion !== undefined && costodescripcion !== null) {
             queryParameters = queryParameters.set('costodescripcion', <any>costodescripcion);
+        }
+        if (idcursotexto !== undefined && idcursotexto !== null) {
+            queryParameters = queryParameters.set('idcursotexto', <any>idcursotexto);
         }
 
         let headers = this.defaultHeaders;

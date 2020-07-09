@@ -52,7 +52,7 @@ export class PresencialComponent implements OnInit {
   }
 
   cargarCurso(){
-    this.idemCursosService.idemCursosGet('eq.'+this.idcurso,null,null,null,null,null,null,null,null,null,null,null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto))), idem_curso_prese(programa,fecha, descripcion,afiche)').subscribe(data =>{
+    this.idemCursosService.idemCursosGet('eq.'+this.idcurso,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,'*,idem_curso_docentes(idem_docentes(*, idem_personas(nombres, apellido_pa, foto))), idem_curso_prese(programa,fecha, descripcion,afiche)').subscribe(data =>{
       this.curso=data[0];
       console.log(this.curso);
       this.precios=this.curso.costodescripcion.split(',');
